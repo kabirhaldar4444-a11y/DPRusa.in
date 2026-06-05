@@ -529,7 +529,7 @@ The SV10 campus stands as a landmark of modern, efficient, and secure data cente
     title: `Doha Metro – Qatar`,
     date: 'Jul 19, 2025',
     category: 'Infrastructure',
-    image: 'https://images.unsplash.com/photo-1519501025264-65ba15a82390?q=80&w=1200',
+    image: '/doha_metro.png',
     overview: `A flagship rapid transit network built with high-velocity tunneling to connect Doha's key economic zones.
 The project is owned and developed by Qatar Rail (Qatar Railways Company).
 It represents one of the largest public transport initiatives in the Middle East, costing approximately \$36 billion.
@@ -999,7 +999,7 @@ The project highlights the success of public-private partnerships in building cr
     title: `Railway and Metro Projects – Global`,
     date: 'Dec 05, 2024',
     category: 'Infrastructure',
-    image: '/metro-tunnel.jpeg',
+    image: '/global_metro.png',
     overview: `Transit infrastructure delivery covering underground metro lines and elevated viaducts globally.
 DPR Construction's Infrastructure division executes rail and metro projects in multiple countries.
 This includes projects in India, the United States, Australia, the United Kingdom, and Europe.
@@ -1177,7 +1177,7 @@ DPR remains committed to delivering engineering excellence and safety in mega-pr
     title: `PAIMANA - India`,
     date: 'Sep 12, 2024',
     category: 'Infrastructure',
-    image: 'https://images.unsplash.com/photo-1584467541268-b040f83be3fd?q=80&w=1200',
+    image: '/paimana_highway.png',
     overview: `Specialized infrastructure and highway link engineering to improve logistics in India.
 The project is owned and developed by the National Highways Authority of India (NHAI).
 It involves constructing multi-level flyovers, high-load bridges, and smart toll plazas.
