@@ -1766,16 +1766,16 @@ const NewsDetailPage = ({ slug }: { slug: string }) => {
               </div>
             )}
 
-            {((article as any).contractor || (article as any).subcontractor) && (
+            {((article as any).constructor || (article as any).subconstructor) && (
               <div className="pt-6 border-t border-slate-100 flex flex-col gap-3">
-                {(article as any).contractor && (
+                {(article as any).constructor && (
                   <p className="text-slate-600 text-lg">
-                    <strong className="text-slate-900 font-bold">Constructor:</strong> {(article as any).contractor}
+                    <strong className="text-slate-900 font-bold">Constructor:</strong> {(article as any).constructor}
                   </p>
                 )}
-                {(article as any).subcontractor && (
+                {(article as any).subconstructor && (
                   <p className="text-slate-600 text-lg">
-                    <strong className="text-slate-900 font-bold">Sub-Constructor:</strong> {(article as any).subcontractor}
+                    <strong className="text-slate-900 font-bold">Sub-Constructor:</strong> {(article as any).subconstructor}
                   </p>
                 )}
               </div>
@@ -1863,16 +1863,16 @@ const NewsDetailPage = ({ slug }: { slug: string }) => {
                     <div className="text-slate-900 font-medium text-sm">{(article as any).implementingAgency}</div>
                   </div>
                 )}
-                {(article as any).contractor && (
+                {(article as any).constructor && (
                   <div>
                     <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Constructor</div>
-                    <div className="text-slate-900 font-medium text-sm">{(article as any).contractor}</div>
+                    <div className="text-slate-900 font-medium text-sm">{(article as any).constructor}</div>
                   </div>
                 )}
-                {(article as any).subcontractor && (
+                {(article as any).subconstructor && (
                   <div>
                     <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Sub-Constructor</div>
-                    <div className="text-slate-900 font-medium text-sm">{(article as any).subcontractor}</div>
+                    <div className="text-slate-900 font-medium text-sm">{(article as any).subconstructor}</div>
                   </div>
                 )}
                 {(article as any).companies && (article as any).companies.length > 0 && (

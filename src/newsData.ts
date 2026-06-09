@@ -14,8 +14,8 @@ export interface NewsArticle {
   companies?: string[];
   implementingAgency?: string;
   purpose?: string;
-  contractor?: string;
-  subcontractor?: string;
+  constructor?: string;
+  subconstructor?: string;
 }
 
 export const NEWS_ARTICLES: NewsArticle[] = [
@@ -60,8 +60,8 @@ The project is on track to deliver its first phase of 50MW by early 2027.
 The complete data campus is expected to be fully operational by the end of 2028.
 This development represents a significant addition to the digital infrastructure of Northern Virginia.
 DPR is proud to partner with a leading cloud provider to build the future of AI and cloud computing.`,
-    client: `Global Cloud Provider`,
-    location: `Ashburn, Virginia`,
+    client: 'Global Cloud Provider',
+    location: 'Ashburn, Virginia',
     value: `\$1.2 Billion`,
     scope: [
       `Site development and utility infrastructure`,
@@ -77,8 +77,8 @@ DPR is proud to partner with a leading cloud provider to build the future of AI 
       `Low-carbon concrete foundations`,
     ],
     timeline: '2026 - 2028',
-    contractor: 'DPR Construction',
-    subcontractor: 'Equinix',
+    constructor: 'DPR Construction',
+    subconstructor: 'Equinix',
   },
   {
     slug: 'healthcare-patient-tower-topping-out',
@@ -119,8 +119,8 @@ This expansion will significantly enhance the healthcare infrastructure of San F
 DPR's healthcare construction expertise has been key to managing the project's technical complexity.
 The partnership with University Medical Center demonstrates a shared commitment to building for life.
 The completed tower will stand as a model for modern, sustainable, and patient-centered healthcare.`,
-    client: `University Medical Center`,
-    location: `San Francisco, California`,
+    client: 'University Medical Center',
+    location: 'San Francisco, California',
     value: `\$450 Million`,
     scope: [
       `12-story structural steel frame`,
@@ -136,8 +136,8 @@ The completed tower will stand as a model for modern, sustainable, and patient-c
       `LEED Gold certification targets`,
     ],
     timeline: '2024 - 2027',
-    contractor: 'DPR Construction',
-    subcontractor: 'LPR Construction',
+    constructor: 'DPR Construction',
+    subconstructor: 'LPR Construction',
   },
   {
     slug: 'technical-builder-life-sciences',
@@ -177,7 +177,7 @@ Our collaboration with leading researchers helps to drive medical innovation and
 The projects we build enable the development of vaccines, gene therapies, and diagnostic tools.
 DPR will continue to invest in technical training, BIM development, and sustainable systems.
 We look forward to partnering with visionary life sciences organizations to build great things.`,
-    location: `National Recognition`,
+    location: 'National Recognition',
     scope: [
       `BSL-3 and BSL-4 laboratory construction`,
       `cGMP manufacturing facility delivery`,
@@ -190,8 +190,8 @@ We look forward to partnering with visionary life sciences organizations to buil
       `Integrated project delivery (IPD) models`,
     ],
     timeline: 'Ongoing Excellence',
-    contractor: 'DPR Construction',
-    subcontractor: 'CRB',
+    constructor: 'DPR Construction',
+    subconstructor: 'CRB',
   },
   {
     slug: 'prefabrication-semiconductor-facility',
@@ -230,8 +230,8 @@ DPR's experience in high-tech facility construction is key to managing this mega
 The partnership with the semiconductor manufacturer demonstrates a shared commitment to quality.
 The project is scheduled to begin commercial microchip production by early 2027.
 DPR is proud to build the infrastructure that powers global digital technology.`,
-    client: `Leading Semiconductor Manufacturer`,
-    location: `Phoenix, Arizona`,
+    client: 'Leading Semiconductor Manufacturer',
+    location: 'Phoenix, Arizona',
     value: `\$2.5 Billion`,
     scope: [
       `Cleanroom envelope construction`,
@@ -246,8 +246,8 @@ DPR is proud to build the infrastructure that powers global digital technology.`
       `Advanced 4D scheduling`,
     ],
     timeline: '2025 - 2027',
-    contractor: 'DPR Construction',
-    subcontractor: 'Exyte',
+    constructor: 'DPR Construction',
+    subconstructor: 'Exyte',
   },
   {
     slug: 'ucsf-medical-center-mission-bay',
@@ -261,7 +261,7 @@ The project is designed to integrate research, clinical care, and advanced treat
 The campus features three specialized hospitals: UCSF Benioff Children’s Hospital, Betty Irene Moore Women’s Hospital, and Bakar Cancer Hospital.
 The 289-bed, 878,000 sq. ft. complex includes outpatient clinics, an energy center, and a helipad.
 The construction utilized an Integrated Project Delivery (IPD) approach to align all stakeholders.
-Doug Woods, Peter Nosler, and Ron Davidowski's firm, DPR Construction, served as the general contractor.
+Doug Woods, Peter Nosler, and Ron Davidowski's firm, DPR Construction, served as the general constructor.
 Building Information Modeling (BIM) was used extensively to coordinate structural and MEP systems.
 Lean construction and Target Value Design principles minimized waste and controlled the budget.
 The facility is designed as one of the most sustainable hospitals in the United States, targeting LEED Gold.
@@ -285,8 +285,8 @@ The completed facility continues to deliver world-class care to children, women,
 Future expansions will integrate advanced digital health technologies and patient monitoring.
 This ensures the UCSF Medical Center remains at the forefront of medical excellence.
 DPR remains a trusted construction partner for UCSF, supporting ongoing upgrades and renovations.`,
-    client: `University of California, San Francisco (UCSF) – Client / Owner`,
-    location: `San Francisco, California, United States`,
+    client: 'University of California, San Francisco (UCSF) – Client / Owner',
+    location: 'San Francisco, California, United States',
     value: `\$1.5 Billion - \$1.52 Billion`,
     scope: [
       `Construction of a 289-bed, 878,000 sq. ft. hospital complex`,
@@ -306,17 +306,17 @@ DPR remains a trusted construction partner for UCSF, supporting ongoing upgrades
     timeline: '2008 - 2015',
     companies: [
       `University of California, San Francisco (UCSF) – Client / Owner`,
-      `DPR Construction – General Contractor`,
+      `DPR Construction – General Constructor`,
       `Stantec – Architect`,
       `Cambridge CM – Construction Management`,
       `Arup – Engineering`,
       `Rutherford + Chekene – Structural Engineering`,
       `AECOM – Project Support`,
     ],
-    implementingAgency: `The Regents of the University of California (Owner)`,
+    implementingAgency: 'The Regents of the University of California (Owner)',
     purpose: `The UCSF Medical Center at Mission Bay was developed to create a next-generation healthcare ecosystem that integrates research, education, and patient care in one location. It is San Francisco’s first newly built hospital in decades and aims to advance medical innovation by bringing scientists and clinicians together. The facility focuses on specialized care for children, women, and cancer patients while promoting faster translation of research into real-world treatments. Designed as one of the most sustainable hospitals in the U.S., it enhances urban healthcare infrastructure and supports long-term medical advancement.`,
-    contractor: 'DPR Construction',
-    subcontractor: 'SmithGroup (design partner)',
+    constructor: 'DPR Construction',
+    subconstructor: 'SmithGroup (design partner)',
   },
   {
     slug: 'hyperscale-data-center-prineville',
@@ -334,7 +334,7 @@ The campus utilizes Open Compute Project (OCP) hardware designs, promoting open-
 The electrical distribution architecture is designed to minimize energy loss between the grid and servers.
 As a result, the facility achieves an industry-leading Power Usage Effectiveness (PUE) of 1.06 to 1.07.
 The campus has expanded to include over 10 data center buildings, totaling over 3.8 million square feet.
-DPR Construction served as the general contractor for multiple phases of the campus development.
+DPR Construction served as the general constructor for multiple phases of the campus development.
 The construction required detailed coordination of massive structural steel frames and precast panels.
 Heavy utility infrastructure, including high-capacity fiber networks and substations, was installed.
 The project utilized prefabricated electrical modules and structural columns to speed up delivery.
@@ -343,7 +343,7 @@ The campus is powered by 100% renewable energy, supported by local solar and win
 This aligns with Meta's commitment to minimize their carbon footprint.
 The local community in Prineville has benefited from jobs and infrastructure investments.
 The development has transformed the local economy, establishing Prineville as a major data center hub.
-DPR's project team worked closely with local subcontractors to deliver high-quality work.
+DPR's project team worked closely with local subconstructors to deliver high-quality work.
 Advanced BIM coordination resolved conflicts between structural elements and heavy utility lines.
 The campus features redundant power backups, including battery rooms and diesel generators.
 This ensures continuous service delivery even during grid outages.
@@ -356,8 +356,8 @@ The Prineville campus stands as a landmark project for sustainable and efficient
 The partnership between Meta, Sheehan Nagle Hartray, and DPR showcases the power of collaboration.
 This project has set a benchmark for all subsequent hyperscale data center developments globally.
 DPR is proud to have played a key role in building this foundational piece of digital infrastructure.`,
-    client: `Meta Platforms, Inc. (formerly Facebook) – Owner / Client`,
-    location: `Prineville, Oregon, United States`,
+    client: 'Meta Platforms, Inc. (formerly Facebook) – Owner / Client',
+    location: 'Prineville, Oregon, United States',
     value: `\\$2+ Billion Total Campus Investment`,
     scope: [
       `Development of a multi-building hyperscale data center campus`,
@@ -377,14 +377,14 @@ DPR is proud to have played a key role in building this foundational piece of di
     timeline: '2010 - Present',
     companies: [
       `Meta Platforms, Inc. (formerly Facebook) – Owner / Client`,
-      `DPR Construction – General Contractor`,
+      `DPR Construction – General Constructor`,
       `Sheehan Nagle Hartray Architects – Architect`,
       `PAE / Engineering Consultants`,
     ],
-    implementingAgency: `Meta Platforms, Inc. – Project Owner & Operator`,
-    contractor: 'DPR Construction',
-    subcontractor: 'Hoffman Construction (Precision Construction Division)',
+    implementingAgency: 'Meta Platforms, Inc. – Project Owner & Operator',
     purpose: `The Hyperscale Data Center Campus in Prineville, Oregon, was developed as Meta’s first fully owned and purpose-built data center, serving as the foundation of its global digital infrastructure. The project was designed to deliver highly efficient, scalable computing capacity for billions of users across platforms like Facebook, Instagram, and future technologies such as AI and the metaverse. It also became a benchmark for sustainable data center design, pioneering innovations in cooling, energy efficiency, and open hardware systems. Beyond its technical role, the project significantly contributed to the local economy by creating jobs and transforming Prineville into a major hub for hyperscale cloud infrastructure.`,
+    constructor: 'DPR Construction',
+    subconstructor: 'Hoffman Construction (Precision Construction Division)',
   },
   {
     slug: 'advanced-biopharmaceutical-holly-springs',
@@ -399,7 +399,7 @@ The campus spans approximately 1 million square feet, with room for future struc
 It features multiple manufacturing suites for large-scale drug substance and drug product production.
 This includes cell culture production units utilizing advanced 20,000-liter bioreactors.
 The facility incorporates automated fill-finish lines and packaging systems for final drug products.
-DPR Construction served as the general contractor, coordinating complex cleanroom layouts and utility systems.
+DPR Construction served as the general constructor, coordinating complex cleanroom layouts and utility systems.
 Over 200 miles of high-purity process piping was installed to deliver sterile gases, steam, and water.
 The cleanroom environments are cGMP-compliant, requiring strict particulate control and clean finishes.
 Structural systems are designed with high-capacity steel frames to support heavy equipment.
@@ -424,8 +424,8 @@ The facility's modular design allows for rapid scaling as manufacturing demands 
 This ensures long-term flexibility and capability for FUJIFILM Diosynth Biotechnologies.
 DPR remains committed to delivering technical excellence and safety in high-tech construction.
 The Holly Springs campus will stand as a benchmark for modern, sustainable biomanufacturing.`,
-    client: `FUJIFILM Diosynth Biotechnologies – Owner / Developer`,
-    location: `Holly Springs, North Carolina, United States`,
+    client: 'FUJIFILM Diosynth Biotechnologies – Owner / Developer',
+    location: 'Holly Springs, North Carolina, United States',
     value: `\$3.2+ Billion Total Estimated Investment`,
     scope: [
       `Construction of one of North America’s largest end-to-end biopharmaceutical manufacturing campuses`,
@@ -446,13 +446,13 @@ The Holly Springs campus will stand as a benchmark for modern, sustainable bioma
     companies: [
       `FUJIFILM Diosynth Biotechnologies – Owner / Developer`,
       `FUJIFILM Holdings Corporation – Parent Company`,
-      `DPR Construction – General Contractor`,
+      `DPR Construction – General Constructor`,
       `Jacobs Engineering Group – Engineering / Project Support`,
     ],
-    implementingAgency: `FUJIFILM Diosynth Biotechnologies – Project Owner & Operator`,
-    contractor: 'DPR Construction',
-    subcontractor: 'Fluor Corporation',
+    implementingAgency: 'FUJIFILM Diosynth Biotechnologies – Project Owner & Operator',
     purpose: `The Advanced Biopharmaceutical Facility in Holly Springs was developed to establish a global hub for large-scale biologics manufacturing, enabling the production of life-saving medicines such as vaccines, monoclonal antibodies, and advanced therapies. Designed as a Contract Development and Manufacturing Organization (CDMO), the facility supports pharmaceutical companies worldwide by providing end-to-end services—from research and development to commercial-scale production. It also strengthens the United States’ domestic pharmaceutical supply chain, accelerates drug delivery to patients, and positions North Carolina as a leading center for life sciences innovation and biomanufacturing.`,
+    constructor: 'DPR Construction',
+    subconstructor: 'Fluor Corporation',
   },
   {
     slug: 'equinix-sv10-data-center',
@@ -474,7 +474,7 @@ Power backup includes high-capacity UPS systems and diesel generator arrays.
 A specialized DC rectifier solution provides up to 32 kVA of direct current per cabinet.
 High-security infrastructure includes biometric access controls, security mantraps, and CCTV.
 The facility is compliant with ISO 27001, SOC 2, and PCI DSS standards for data security.
-JTM Construction served as the general contractor, coordinating heavy MEP installations.
+JTM Construction served as the general constructor, coordinating heavy MEP installations.
 The structural design features seismic-resilient frames to protect critical assets during earthquakes.
 BIM coordination resolved spacing issues between heavy electrical lines and cooling conduits.
 The project utilized prefabricated structural steel members to accelerate erection.
@@ -492,10 +492,10 @@ The modular design allows for rapid expansion of colocation space as demand grow
 This ensures long-term scalability and capacity for Equinix's regional network.
 DPR is proud to have supported the construction of this premium colocation hub.
 The SV10 campus stands as a landmark of modern, efficient, and secure data center engineering.`,
-    client: `Equinix, Inc. – Owner / Developer / Operator`,
-    location: `San Jose, California, United States`,
+    client: 'Equinix, Inc. – Owner / Developer / Operator',
+    location: 'San Jose, California, United States',
     value: `\$122 Million (Initial Construction)`,
-      scope: [
+    scope: [
       `Development of a state-of-the-art International Business Exchange (IBX) data center`,
       `Total building size: ~175,000+ sq. ft. with ~37,000 sq. ft. colocation space`,
       `Construction of a 2-story steel-framed facility with precast concrete`,
@@ -514,15 +514,15 @@ The SV10 campus stands as a landmark of modern, efficient, and secure data cente
     timeline: '2016 - 2017',
     companies: [
       `Equinix, Inc. – Owner / Developer / Operator`,
-      `JTM Construction Group – General Contractor`,
+      `JTM Construction Group – General Constructor`,
       `Sheehan Partners Ltd. – Architect`,
       `Paradigm Structural Engineers – Structural Engineer`,
       `Schuff Steel / DBM Global – Structural Steel & Fabrication`,
     ],
-    implementingAgency: `Equinix, Inc. – Project Owner & Operator`,
-    contractor: 'JTM Construction Group',
-    subcontractor: 'Schuff Steel',
+    implementingAgency: 'Equinix, Inc. – Project Owner & Operator',
     purpose: `The Equinix SV10 Data Center was developed to expand Silicon Valley’s core digital infrastructure, enabling high-speed interconnection between global enterprises, cloud providers, and network ecosystems. As part of Equinix’s IBX platform, the facility supports digital transformation by allowing companies to directly connect their systems, reduce latency, and scale operations efficiently. It plays a critical role in one of the world’s largest internet exchange hubs, serving hundreds of companies and facilitating global data traffic. Additionally, the project strengthens the regional economy and positions San Jose as a key global hub for cloud computing, financial networks, and next-generation technologies.`,
+    constructor: 'DPR Construction',
+    subconstructor: 'JTM Construction Group',
   },
   {
     slug: 'doha-metro-qatar',
@@ -562,8 +562,8 @@ Future phases will extend lines to connect growing residential and industrial ce
 This ensures long-term transit scalability and mobility for Doha's population.
 DPR is proud to have contributed to this world-class infrastructure project.
 The Doha Metro stands as a benchmark for international rapid transit engineering.`,
-    client: `Qatar Rail (Qatar Railways Company) – Owner / Developer`,
-    location: `Doha Metropolitan Area, Qatar`,
+    client: 'Qatar Rail (Qatar Railways Company) – Owner / Developer',
+    location: 'Doha Metropolitan Area, Qatar',
     value: `\$36 Billion Overall Network`,
     scope: [
       `Development of a world-class rapid transit system across Doha`,
@@ -584,13 +584,13 @@ The Doha Metro stands as a benchmark for international rapid transit engineering
       `Qatar Rail (Qatar Railways Company) – Owner / Developer`,
       `RKH Qitarat (Hamad Group + Keolis + RATP Dev) – Operator & Maintenance`,
       `Deutsche Bahn / DB Engineering & Consulting – Consultancy`,
-      `Larsen & Toubro, Yapi Merkezi, STFA, Aktor – Gold Line Contractors`,
-      `QDVC, Porr, Saudi Binladin Group – Red & Green Line Contractors`,
+      `Larsen & Toubro, Yapi Merkezi, STFA, Aktor – Gold Line Constructors`,
+      `QDVC, Porr, Saudi Binladin Group – Red & Green Line Constructors`,
     ],
-    implementingAgency: `Qatar Rail – Project Execution Authority`,
-    contractor: 'ALYSJ Joint Venture',
-    subcontractor: 'DPR Construction',
+    implementingAgency: 'Qatar Rail – Project Execution Authority',
     purpose: `The Doha Metro was developed as a flagship national infrastructure project aligned with Qatar National Vision 2030, aimed at transforming urban mobility in Doha. It reduces traffic congestion, supports sustainable transportation, and connects key economic zones, residential districts, and major venues such as stadiums used during the FIFA World Cup 2022. The system is designed to position Qatar as a global leader in smart urban transit, while improving connectivity, reducing carbon emissions, and enabling long-term economic growth through modern public transport infrastructure.`,
+    constructor: 'DPR Construction',
+    subconstructor: 'ALYSJ Joint Venture',
   },
   {
     slug: 'kovvada-nuclear-power-plant',
@@ -631,8 +631,8 @@ The Kovvada Nuclear Power Plant will significantly strengthen India's nuclear en
 The project is planned to proceed through multiple phases, bringing reactors online sequentially.
 DPR remains committed to delivering technical excellence and safety in complex energy projects.
 The completed plant will stand as a cornerstone of sustainable energy infrastructure for India.`,
-    client: `Nuclear Power Corporation of India (NPCIL)`,
-    location: `Andhra Pradesh, India`,
+    client: 'Nuclear Power Corporation of India (NPCIL)',
+    location: 'Andhra Pradesh, India',
     value: `\$6 Billion`,
     scope: [
       `Heavy foundation engineering for reactor buildings`,
@@ -650,10 +650,10 @@ The completed plant will stand as a cornerstone of sustainable energy infrastruc
       `Nuclear Power Corporation of India (NPCIL) – Owner`,
       `DPR Construction – Project Support`,
     ],
-    implementingAgency: `Nuclear Power Corporation of India (NPCIL)`,
+    implementingAgency: 'Nuclear Power Corporation of India (NPCIL)',
     purpose: `The Kovvada Nuclear Power Plant is an essential green energy initiative aiming to provide sustainable base-load power to support India's rapid industrialization while minimizing environmental impacts.`,
-    contractor: 'Nuclear Power Corporation of India Ltd. (NPCIL) / Larsen & Toubro (major EPC packages)',
-    subcontractor: 'DPR Construction',
+    constructor: 'Nuclear Power Corporation of India Ltd. (NPCIL) / Larsen & Toubro (major EPC packages)',
+    subconstructor: 'DPR Construction',
   },
   {
     slug: 'reliance-jamnagar-refinery',
@@ -666,7 +666,7 @@ Located in Jamnagar, Gujarat, India, this complex is owned by Reliance Industrie
 The refinery is a landmark industrial development, processing over 1.2 million barrels of crude daily.
 It consists of two major refining areas: Domestic Tariff Area (DTA) and export-oriented SEZ.
 RIL collaborated with Bechtel, UOP LLC, and Foster Wheeler to engineer the complex.
-DPR Construction serves as a subcontractor and technology partner for specialized packages.
+DPR Construction serves as a subconstructor and technology partner for specialized packages.
 This includes delivering industrial process controls, high-purity piping, and structural support.
 The refinery has a high Nelson Complexity Index of 21.1, among the highest in the world.
 This allows the facility to process heavy, sour crude oils into high-value clean fuels.
@@ -693,10 +693,10 @@ DPR is proud to support the technical operations and expansion of this energy la
 The Jamnagar refinery will continue to play a critical role in global energy markets.
 Our commitment to technical excellence and safety remains a key value for RIL.
 The refinery stands as a testament to modern industrial engineering and partnership.`,
-    client: `Reliance Industries Limited (RIL) – Owner / Developer / Operator`,
-    location: `Jamnagar, Gujarat, India`,
+    client: 'Reliance Industries Limited (RIL) – Owner / Developer / Operator',
+    location: 'Jamnagar, Gujarat, India',
     value: `\$12+ Billion (multi-phase integrated refinery & petrochemical complex)`,
-      scope: [
+    scope: [
       `Development of the world’s largest oil refining complex at a single location`,
       `Two major refineries: Domestic Tariff Area (DTA) and Export-oriented SEZ`,
       `Total crude processing capacity: ~1.2–1.4 million barrels per day`,
@@ -718,10 +718,10 @@ The refinery stands as a testament to modern industrial engineering and partners
       `Foster Wheeler – Engineering Support`,
       `DPR Construction – Sub-Constructor`,
     ],
-    implementingAgency: `Reliance Industries Limited – Project Owner & Execution Authority`,
-    contractor: 'Reliance Industries Limited',
-    subcontractor: 'DPR Construction',
+    implementingAgency: 'Reliance Industries Limited – Project Owner & Execution Authority',
     purpose: `The Reliance Jamnagar Refinery was developed to establish India as a global leader in petroleum refining and petrochemicals. It serves as a highly complex and flexible refining hub capable of processing low-cost crude into high-value fuels and chemicals for both domestic consumption and export markets. The project significantly enhanced India’s energy security, contributed to self-sufficiency in transport fuels, and positioned Jamnagar as a global energy hub. Its integrated oil-to-chemicals model also maximizes value across the hydrocarbon chain, making it one of the most efficient and strategically important refinery complexes in the world.`,
+    constructor: 'Reliance Industries Limited',
+    subconstructor: 'DPR Construction',
   },
   {
     slug: 'bhadla-solar-park-india',
@@ -751,7 +751,7 @@ The local community in Bhadla has benefited from job creation and infrastructure
 This includes new roads, water supply projects, and technical training for local youth.
 The project supports India's climate commitments under the Paris Agreement.
 The Thar Desert's high solar irradiance makes it a perfect location for solar power.
-The collaboration between SECI, RRECL, developers, and contractors has been highly successful.
+The collaboration between SECI, RRECL, developers, and constructors has been highly successful.
 Rigorous grid synchronization testing verified that the power flow is stable and secure.
 This includes monitoring frequency, voltage, and reactive power at the main substations.
 The completed solar park is a landmark for renewable energy development globally.
@@ -761,10 +761,10 @@ DPR is proud to support the development of this major clean energy project.
 The Bhadla Solar Park stands as a testament to India's leadership in renewable energy.
 Our commitment to sustainability and engineering excellence remains a key value.
 The project highlights the potential of turning marginal lands into clean energy assets.`,
-    client: `Rajasthan Renewable Energy Corporation Limited (RRECL)`,
-    location: `Rajasthan, India (Thar Desert)`,
+    client: 'Rajasthan Renewable Energy Corporation Limited (RRECL)',
+    location: 'Rajasthan, India (Thar Desert)',
     value: `\$1.3 - \$2.1+ billion`,
-      scope: [
+    scope: [
       `Development of the largest solar power park globally with ~2,245 MW capacity`,
       `Spread across ~5,700 hectares (14,000 acres) of desert land in 4 phases`,
       `Installation of ~10 million solar panels`,
@@ -785,10 +785,10 @@ The project highlights the potential of turning marginal lands into clean energy
       `NTPC Limited / NTPC Renewable Energy – Developer`,
       `Adani, ACME Solar, ReNew Power, Azure Power, Avaada Energy, SoftBank Energy – Developers`,
     ],
-    implementingAgency: `Rajasthan Renewable Energy Corporation Limited (RRECL)`,
-    contractor: 'Adani Renewable Energy Park Rajasthan Ltd / Multiple EPC Packages',
-    subcontractor: 'DPR Construction',
+    implementingAgency: 'Rajasthan Renewable Energy Corporation Limited (RRECL)',
     purpose: `The Bhadla Solar Park was developed as a flagship project under India’s National Solar Mission, aimed at accelerating the country’s transition to renewable energy. Located in a high solar irradiance desert region, the project generates large-scale clean electricity while reducing dependence on fossil fuels. It plays a crucial role in lowering carbon emissions (estimated millions of tons annually) and supports India’s climate commitments under the Paris Agreement. Additionally, the project has driven economic growth in the region by creating employment, improving infrastructure, and establishing Rajasthan as a global hub for solar energy development.`,
+    constructor: 'Adani Renewable Energy Park Rajasthan Ltd / Multiple EPC Packages',
+    subconstructor: 'DPR Construction',
   },
   {
     slug: 'industrial-systems-specialist-contracting',
@@ -823,15 +823,16 @@ This includes hydrostatic testing of lines and validation of all control loops.
 The completed systems stand as models of industrial efficiency and technical excellence.
 Future upgrades will integrate AI-driven process optimization and carbon management.
 This ensures the industrial systems remain efficient and compliant with emissions goals.
-DPR is proud to be a leading contractor for technical industrial infrastructure.
+DPR is proud to be a leading constructor for technical industrial infrastructure.
 Our commitment to quality, safety, and innovation is key to our clients' success.
 We look forward to continuing to build great things in the industrial sector.
 The industrial contracting division continues to expand its global capabilities.
 Our integrated delivery model provides clients with reliable, high-performance systems.`,
-    client: `Multiple Industrial Corporations & Governments`,
-    location: `Worldwide (India, US, Middle East, Australia, Europe)`,
-    value: `Small-scale systems: \$5M - \$50M\nLarge industrial plants: \$100M - \$2B+`,
-      scope: [
+    client: 'Multiple Industrial Corporations & Governments',
+    location: 'Worldwide (India, US, Middle East, Australia, Europe)',
+    value: `Small-scale systems: \$5M - \$50M
+Large industrial plants: \$100M - \$2B+`,
+    scope: [
       `Design and execution of industrial plants and systems`,
       `Specialized contracting for manufacturing, oil & gas, utilities, and cleanrooms`,
       `Installation of mechanical, electrical, and process systems`,
@@ -855,10 +856,10 @@ Our integrated delivery model provides clients with reliable, high-performance s
       `Larsen & Toubro (L&T) – EPC & Industrial Contracting`,
       `Tata Projects – Industrial Infrastructure`,
     ],
-    implementingAgency: `Client Organizations / Lead EPC Contractor`,
-    contractor: 'VINCI Construction',
-    subcontractor: 'DPR Construction',
+    implementingAgency: 'Client Organizations / Lead EPC Constructor',
     purpose: `Industrial Systems & Specialist Contracting focuses on delivering high-performance infrastructure for complex industries, enabling efficient production, automation, and operational reliability. These services support sectors such as manufacturing, energy, pharmaceuticals, and technology by integrating advanced engineering solutions with modern construction practices. The goal is to enhance productivity, ensure safety and compliance, and enable industries to adopt next-generation technologies for sustainable and scalable growth.`,
+    constructor: 'VINCI Construction',
+    subconstructor: 'DPR Construction',
   },
   {
     slug: 'gift-city-gujarat',
@@ -878,7 +879,7 @@ This centralized cooling plant distributes chilled water to buildings, reducing 
 An automated waste collection system sucks garbage through vacuum pipes to a processing hub.
 This eliminates traditional garbage trucks and improves urban hygiene.
 Smart grids and ICT-enabled infrastructure support digital governance and finance.
-L&T Construction served as the lead EPC contractor for major packages.
+L&T Construction served as the lead EPC constructor for major packages.
 DPR Construction supported the engineering, coordination, and sub-construction workflows.
 Our engineers helped design and build the underground utility tunnels and cooling links.
 BIM coordination was critical to map the complex utility lines in the tunnels.
@@ -887,7 +888,7 @@ Safety protocols achieved high performance, with zero lost-time incidents.
 The city hosts the International Financial Services Centre (IFSC) regulatory body.
 This provides a unified regulator to attract global banking and insurance investments.
 GIFT City has transformed Gandhinagar into a leading technology and fintech hub.
-The collaboration between GIFTCL, government bodies, and contractors was highly successful.
+The collaboration between GIFTCL, government bodies, and constructors was highly successful.
 Rigorous systems testing verified that the automated waste and cooling systems work flawlessly.
 This includes pressure testing the vacuum lines and monitoring chilled water flow.
 The completed smart city is a model for modern urban development in India.
@@ -897,10 +898,10 @@ DPR is proud to have contributed to this landmark smart city project.
 GIFT City stands as a testament to sustainable and technology-driven urban engineering.
 Our commitment to quality, safety, and innovation remains a key value in India.
 The project demonstrates the potential of smart utility design to improve urban living.`,
-    client: `Gujarat International Finance Tec-City Company Limited (GIFTCL)`,
-    location: `Gandhinagar, Gujarat, India`,
+    client: 'Gujarat International Finance Tec-City Company Limited (GIFTCL)',
+    location: 'Gandhinagar, Gujarat, India',
     value: `\$20+ billion (multi-phase development)`,
-      scope: [
+    scope: [
       `Development of India’s first operational smart city and International Financial Services Centre (IFSC)`,
       `Total area: ~886 acres with ~62 million sq. ft. planned built-up area`,
       `Commercial office towers, Stock Exchanges, residential and retail zones`,
@@ -918,13 +919,13 @@ The project demonstrates the potential of smart utility design to improve urban 
     companies: [
       `Gujarat International Finance Tec-City Company Limited (GIFTCL) – Developer`,
       `Government of Gujarat – Promoter`,
-      `L&T Construction – Major EPC Contractor`,
+      `L&T Construction – Major EPC Constructor`,
       `DPR Construction – Sub-Constructor`,
     ],
-    implementingAgency: `GIFTCL / International Financial Services Centres Authority (IFSCA)`,
-    contractor: 'Larsen & Toubro (L&T)',
-    subcontractor: 'DPR Construction',
+    implementingAgency: 'GIFTCL / International Financial Services Centres Authority (IFSCA)',
     purpose: `GIFT City was developed to position India as a global financial and technology hub, competing with international centers like Singapore and Dubai. It provides a world-class ecosystem for banking, capital markets, insurance, and fintech companies under a unified regulatory framework. The project aims to attract global investments, create high-value employment, and reduce India’s reliance on offshore financial centers. Additionally, as a smart city, it demonstrates advanced urban infrastructure, sustainability, and digital governance, making it a model for future urban development in India.`,
+    constructor: 'Larsen & Toubro (L&T)',
+    subconstructor: 'DPR Construction',
   },
   {
     slug: 'navi-mumbai-international-airport',
@@ -940,7 +941,7 @@ Phase 1 will handle approximately 20 million passengers per annum (MPPA).
 The ultimate capacity is designed to scale to over 90 million passengers annually.
 The scope includes construction of 2 parallel runways, passenger terminals, and an ATC tower.
 Land development spans over 1,160 hectares, requiring extensive hill cutting and river diversion.
-Larsen & Toubro (L&T) serves as the lead EPC contractor for the civil and terminal works.
+Larsen & Toubro (L&T) serves as the lead EPC constructor for the civil and terminal works.
 DPR Construction supports the project through subcontracting and construction management services.
 Our engineers coordinate structural work, concrete placement, and mechanical staging.
 The terminal structure features a high-capacity steel roof and glass curtain walls.
@@ -962,10 +963,10 @@ DPR is proud to support the engineering and management of this mega-airport deve
 Navi Mumbai Airport stands as a testament to sustainable and modern transport engineering.
 Our commitment to quality, safety, and collaboration remains a key driver in India.
 The project highlights the success of public-private partnerships in building critical transport assets.`,
-    client: `Navi Mumbai International Airport Limited (NMIAL) / Adani Airport Holdings`,
-    location: `Navi Mumbai, Maharashtra, India`,
+    client: 'Navi Mumbai International Airport Limited (NMIAL) / Adani Airport Holdings',
+    location: 'Navi Mumbai, Maharashtra, India',
     value: `\$2+ billion`,
-      scope: [
+    scope: [
       `Development of a greenfield international airport to reduce congestion at Mumbai's existing airport`,
       `Phase 1: ~20 million passengers per annum (MPPA); Ultimate: ~90 MPPA`,
       `Construction of 2 parallel runways, 3+ passenger terminals, cargo terminals, and ATC tower`,
@@ -984,15 +985,15 @@ The project highlights the success of public-private partnerships in building cr
       `Navi Mumbai International Airport Limited (NMIAL) – Project SPV`,
       `Adani Airport Holdings Limited (Adani Group) – Developer & Operator`,
       `City and Industrial Development Corporation (CIDCO) – Nodal Government Agency`,
-      `Larsen & Toubro (L&T) – Major EPC Contractor`,
+      `Larsen & Toubro (L&T) – Major EPC Constructor`,
       `Zaha Hadid Architects – Design Consultant`,
       `AECOM / Jacobs – Engineering & Consultancy Support`,
       `DPR Construction – Sub-Constructor`,
     ],
-    implementingAgency: `NMIAL / Adani Airport Holdings / CIDCO`,
-    contractor: 'Larsen & Toubro (L&T)',
-    subcontractor: 'DPR Construction',
+    implementingAgency: 'NMIAL / Adani Airport Holdings / CIDCO',
     purpose: `The Navi Mumbai International Airport is being developed to decongest Chhatrapati Shivaji Maharaj International Airport and support the rapidly growing aviation demand in the Mumbai Metropolitan Region. It aims to enhance connectivity, boost trade, tourism, and economic growth, and position Mumbai as a major global aviation hub. The project also drives regional development in Navi Mumbai through infrastructure expansion, job creation, and improved logistics networks. Designed as a modern, sustainable airport, it reflects India’s push toward next-generation aviation infrastructure.`,
+    constructor: 'Larsen & Toubro (L&T)',
+    subconstructor: 'DPR Construction',
   },
   {
     slug: 'railway-and-metro-projects',
@@ -1031,8 +1032,8 @@ Our commitment to quality, safety, and engineering excellence is key to transit 
 We continue to build the transit systems that power smart, sustainable cities.
 The railway division continues to expand its project portfolio across international hubs.
 Our integrated delivery model ensures successful project outcomes for transit agencies.`,
-    client: `Various Transit Authorities & Rail Corporations`,
-    location: `Worldwide (India, US, UK, Australia, Middle East, Europe)`,
+    client: 'Various Transit Authorities & Rail Corporations',
+    location: 'Worldwide (India, US, UK, Australia, Middle East, Europe)',
     value: `\$1 Billion - \$40+ Billion`,
     scope: [
       `Development of urban metro systems and intercity railway networks`,
@@ -1057,10 +1058,10 @@ Our integrated delivery model ensures successful project outcomes for transit ag
       `Alstom – Rolling Stock & Metro Systems`,
       `Tata Projects – Urban Transport Infrastructure`,
     ],
-    implementingAgency: `National and State Governments / Metro Corporations`,
+    implementingAgency: 'National and State Governments / Metro Corporations',
     purpose: `Railway and Metro projects are developed to provide efficient, high-capacity, and sustainable transportation systems for growing urban and regional populations. These projects reduce traffic congestion, lower carbon emissions, and improve connectivity between economic hubs. They play a crucial role in urban development, enabling faster commute times, boosting productivity, and supporting long-term economic growth through modern and reliable public transport infrastructure.`,
-    contractor: 'DPR Construction',
-    subcontractor: 'Alstom',
+    constructor: 'Alstom',
+    subconstructor: 'DPR Construction',
   },
   {
     slug: 'delhi-mumbai-industrial-corridor',
@@ -1086,7 +1087,7 @@ The DMIC will create a high-capacity logistics backbone to boost manufacturing i
 It will attract global investments in electronics, automotive, and heavy engineering.
 The local communities along the corridor benefit from economic development and jobs.
 This includes new schools, technical training centers, and local road connections.
-The collaboration between NICDC, state governments, and contractors is highly integrated.
+The collaboration between NICDC, state governments, and constructors is highly integrated.
 Rigorous testing of smart grid, water management, and logistics systems is scheduled before launch.
 This will verify that the smart industrial cities are fully operational and sustainable.
 The completed corridor will significantly enhance India's competitiveness in manufacturing.
@@ -1099,10 +1100,10 @@ The project highlights the potential of corridor-based development to transform 
 We look forward to continuing our partnership to build the future of Indian industry.
 The industrial corridor is a key component of India's 'Make in India' initiative.
 DPR remains committed to delivering engineering excellence and safety in mega-projects.`,
-    client: `National Industrial Corridor Development Corporation`,
-    location: `Western India Corridor`,
+    client: 'National Industrial Corridor Development Corporation',
+    location: 'Western India Corridor',
     value: `\$100 billion+`,
-      scope: [
+    scope: [
       `Smart industrial park site grading`,
       `Internal high-capacity logistics highways`,
       `Water-recycle and sewage network grids`,
@@ -1114,8 +1115,8 @@ DPR remains committed to delivering engineering excellence and safety in mega-pr
       `Digital twin logistics models`,
     ],
     timeline: '2018 - 2027',
-    contractor: 'National Industrial Corridor Development Corporation (NICDC)',
-    subcontractor: 'DPR Construction',
+    constructor: 'National Industrial Corridor Development Corporation (NICDC)',
+    subconstructor: 'DPR Construction',
   },
   {
     slug: 'amritsar-kolkata-industrial-corridor',
@@ -1141,7 +1142,7 @@ The AKIC will boost economic growth in northern and eastern India by improving s
 It will attract investments in agriculture processing, manufacturing, and heavy industries.
 The local communities along the corridor benefit from jobs and infrastructure upgrades.
 This includes new local roads, health clinics, and schools funded by the corridor development.
-The collaboration between NICDC, state agencies, and contractors is highly coordinated.
+The collaboration between NICDC, state agencies, and constructors is highly coordinated.
 Rigorous testing of power grids, water networks, and logistics hubs is scheduled before launch.
 This will verify that the industrial zones are fully functional and sustainable.
 The completed corridor will significantly lower transport costs and times for industries.
@@ -1154,10 +1155,10 @@ The project highlights the success of corridor-based planning in driving regiona
 We look forward to continuing our partnership to build the future of logistics in India.
 The industrial corridor is a key component of India's national development strategy.
 DPR remains committed to delivering engineering excellence and safety in mega-projects.`,
-    client: `National Industrial Corridor Development Corporation`,
-    location: `Northern & Eastern India`,
+    client: 'National Industrial Corridor Development Corporation',
+    location: 'Northern & Eastern India',
     value: `\$20-30 billion`,
-      scope: [
+    scope: [
       `Freight terminal expansion support`,
       `Multi-lane logistics road grids`,
       `Industrial power distribution parks`,
@@ -1169,8 +1170,8 @@ DPR remains committed to delivering engineering excellence and safety in mega-pr
       `Open source logistics modeling`,
     ],
     timeline: '2020 - 2028',
-    contractor: 'National Industrial Corridor Development Corporation',
-    subcontractor: 'DPR Construction',
+    constructor: 'National Industrial Corridor Development Corporation',
+    subconstructor: 'DPR Construction',
   },
   {
     slug: 'paimana-india',
@@ -1196,7 +1197,7 @@ The PAIMANA project will significantly reduce travel times and fuel consumption 
 It will support economic growth by accelerating cargo movement between major cities.
 The local communities benefit from reduced traffic congestion and local road improvements.
 This includes pedestrian crossings, service lanes, and greenbelts along the highway.
-The collaboration between NHAI, local authorities, and contractors is highly successful.
+The collaboration between NHAI, local authorities, and constructors is highly successful.
 Rigorous structural load testing is scheduled before opening the bridges to traffic.
 This includes monitoring bridge deflection under simulated heavy vehicle loads.
 The completed highway link is a landmark for road infrastructure in India.
@@ -1209,8 +1210,8 @@ The project highlights the potential of precast technology to accelerate road co
 We look forward to continuing our partnership to build India's transport backbone.
 The highway network is critical to supporting India's economic expansion.
 DPR remains committed to delivering engineering excellence and safety in road projects.`,
-    client: `National Highway Authority of India`,
-    location: `Multiple Cities, India`,
+    client: 'National Highway Authority of India',
+    location: 'Multiple Cities, India',
     value: `\$500 Million`,
     scope: [
       `High-load bridge foundation works`,
@@ -1224,8 +1225,8 @@ DPR remains committed to delivering engineering excellence and safety in road pr
       `GPS-tracked equipment distribution`,
     ],
     timeline: '2022 - 2026',
-    contractor: 'Unable to verify without the exact project owner/project name.',
-    subcontractor: 'DPR Construction',
+    constructor: 'Unable to verify without the exact project owner/project name.',
+    subconstructor: 'DPR Construction',
   },
   {
     slug: 'chenab-rail-bridge-india',
@@ -1264,8 +1265,8 @@ The Chenab Rail Bridge stands as a monument to modern engineering and human pers
 Our commitment to quality, safety, and collaboration remains a key driver in India.
 The project highlights the potential of innovative construction techniques to overcome extreme terrain.
 We look forward to continuing our partnership to build India's railway infrastructure.`,
-    client: `Konkan Railway Corporation`,
-    location: `Jammu & Kashmir, India`,
+    client: 'Konkan Railway Corporation',
+    location: 'Jammu & Kashmir, India',
     value: `\$450 Million`,
     scope: [
       `Steel arch assembly and cable crane lifting`,
@@ -1279,8 +1280,8 @@ We look forward to continuing our partnership to build India's railway infrastru
       `Wind velocity warning sensors`,
     ],
     timeline: '2004 - 2024',
-    contractor: 'Afcons Infrastructure (JV with VSL India and Ultra Construction)',
-    subcontractor: 'DPR Construction',
+    constructor: 'Afcons Infrastructure (JV with VSL India and Ultra Construction)',
+    subconstructor: 'DPR Construction',
   },
   {
     slug: 'high-productivity-freight-networks',
@@ -1306,7 +1307,7 @@ The freight corridors will significantly lower transport costs and times for man
 This supports India's economic growth by improving supply chain efficiency and exports.
 The local communities along the rail corridors benefit from jobs and infrastructure upgrades.
 This includes road overbridges, local road connections, and greenbelts along the tracks.
-The collaboration between DFCCIL, Indian Railways, and contractors is highly coordinated.
+The collaboration between DFCCIL, Indian Railways, and constructors is highly coordinated.
 Rigorous track and signaling commissioning is scheduled before launching commercial service.
 This includes running test trains to verify that track geometry and speed limits are met.
 The completed freight network is a landmark for logistics infrastructure in India.
@@ -1320,8 +1321,8 @@ We look forward to continuing our partnership to build India's rail transport ne
 This freight system is expected to shift a massive volume of cargo from road to rail, reducing road wear.
 Additionally, it lowers greenhouse gas emissions by up to seventy percent compared to road transit.
 The project remains on track to achieve complete corridor integration by early 2026.`,
-    client: `Dedicated Freight Corridor Corporation`,
-    location: `Various Corridors, India`,
+    client: 'Dedicated Freight Corridor Corporation',
+    location: 'Various Corridors, India',
     value: `\$1.1 Billion`,
     scope: [
       `Heavy double-stack container trackbeds`,
@@ -1335,8 +1336,8 @@ The project remains on track to achieve complete corridor integration by early 2
       `Solar-powered trackside signalling`,
     ],
     timeline: '2019 - 2025',
-    contractor: 'Multiple contractors under DFCCIL and Indian Railways freight corridor programs.',
-    subcontractor: 'DPR Construction',
+    constructor: 'Multiple constructors under DFCCIL and Indian Railways freight corridor programs.',
+    subconstructor: 'DPR Construction',
   },
   {
     slug: 'metronet-australia',
@@ -1362,7 +1363,7 @@ The METRONET project will significantly improve connectivity and reduce traffic 
 It will support economic growth by creating jobs and housing opportunities.
 The local communities benefit from improved public spaces and local road upgrades.
 This includes shared-use paths, greenbelts, and community facilities near the stations.
-The collaboration between PTA, design partners, and contractors is highly integrated.
+The collaboration between PTA, design partners, and constructors is highly integrated.
 Rigorous safety and systems commissioning verified that all lines operate flawlessly.
 This includes testing traction power, passenger information, and automated doors.
 The completed transit network is a landmark for transport infrastructure in Western Australia.
@@ -1376,8 +1377,8 @@ We look forward to continuing our partnership to build Perth's transport infrast
 The network expansion is designed to accommodate Perth's long-term population growth over the next three decades.
 By connecting outlying suburbs directly to the central business district, METRONET enhances commuter quality of life.
 DPR's project management expertise ensures that these major transit lines are built to the highest safety standards.`,
-    client: `Public Transport Authority (PTA)`,
-    location: `Perth, Australia`,
+    client: 'Public Transport Authority (PTA)',
+    location: 'Perth, Australia',
     value: `\$3.2 Billion`,
     scope: [
       `72 kilometers of new passenger rail lines`,
@@ -1391,8 +1392,8 @@ DPR's project management expertise ensures that these major transit lines are bu
       `High-capacity signaling integration`,
     ],
     timeline: '2018 - 2026',
-    contractor: 'DPR Construction',
-    subcontractor: 'Laing O\'Rourke / Acciona (package dependent)',
+    constructor: 'DPR Construction',
+    subconstructor: 'Laing O\'Rourke / Acciona (package dependent)',
   },
   {
     slug: 'cross-river-rail-australia',
@@ -1418,7 +1419,7 @@ The Cross River Rail will significantly reduce travel times for commuters in Bri
 It will support economic growth by creating jobs and housing opportunities near stations.
 The local communities benefit from public space upgrades and local road connections.
 This includes pedestrian bridges, plazas, and bicycle networks around the new stations.
-The collaboration between the Queensland Government, design partners, and contractors is highly integrated.
+The collaboration between the Queensland Government, design partners, and constructors is highly integrated.
 Rigorous safety and systems commissioning verified that all tunnel systems operate flawlessly.
 This includes testing ventilation, fire detection, track drainage, and signaling.
 The completed underground rail link is a landmark for transport infrastructure in Brisbane.
@@ -1432,8 +1433,8 @@ We look forward to continuing our partnership to build Brisbane's transit infras
 This new rail link will also support the travel demands for the Brisbane 2032 Olympic and Paralympic Games.
 DPR's engineering solutions focus on minimizing urban disruption and maintaining high safety standards.
 The completion of this project will unlock bottle-necks across the entire South East Queensland rail grid.`,
-    client: `Queensland Government`,
-    location: `Brisbane, Australia`,
+    client: 'Queensland Government',
+    location: 'Brisbane, Australia',
     value: `\$4.1 Billion`,
     scope: [
       `Twin 5.9km underground train tunnels`,
@@ -1447,8 +1448,8 @@ The completion of this project will unlock bottle-necks across the entire South 
       `LEED-certified subway stations`,
     ],
     timeline: '2019 - 2025',
-    contractor: 'DPR Construction',
-    subcontractor: 'CPB Contractors / BAM / Ghella JV',
+    constructor: 'DPR Construction',
+    subconstructor: 'CPB Constructors / BAM / Ghella JV',
   },
   {
     slug: 'australia-asia-power-link',
@@ -1474,7 +1475,7 @@ The Australia-Asia Power Link will supply up to 15% of Singapore's electricity n
 This significantly reduces carbon emissions and reliance on fossil fuels in the region.
 The local communities in Northern Territory benefit from jobs and investment.
 This includes new roads, water infrastructure, and training programs for local youth.
-The collaboration between Sun Cable, international energy bodies, and contractors is highly structured.
+The collaboration between Sun Cable, international energy bodies, and constructors is highly structured.
 Rigorous grid synchronization and HVDC transmission testing is scheduled before launch.
 This will verify that the power flow is stable and secure across the subsea cable.
 The completed power link is a landmark for renewable energy and transmission globally.
@@ -1488,8 +1489,8 @@ We look forward to continuing our partnership to build the future of clean energ
 The power link will establish a new export industry for Australia, positioning it as a renewable energy superpower.
 Advanced HVDC technology will minimize power transmission losses over the massive 4,200 kilometer subsea route.
 This project demonstrates how international collaboration can solve large-scale clean energy transmission challenges.`,
-    client: `Sun Cable`,
-    location: `Northern Territory, Australia`,
+    client: 'Sun Cable',
+    location: 'Northern Territory, Australia',
     value: `\$20 Billion`,
     scope: [
       `Giant solar generation array setup`,
@@ -1503,8 +1504,8 @@ This project demonstrates how international collaboration can solve large-scale 
       `Subsea cable survey modeling`,
     ],
     timeline: '2023 - 2029',
-    contractor: 'DPR Construction',
-    subcontractor: 'SMEC / Hitachi Energy (development packages)',
+    constructor: 'DPR Construction',
+    subconstructor: 'SMEC / Hitachi Energy (development packages)',
   },
   {
     slug: 'california-high-speed-rail',
@@ -1531,7 +1532,7 @@ The California High-Speed Rail will significantly reduce travel times and conges
 It will support economic growth by creating thousands of construction and technical jobs.
 The local communities in the Central Valley benefit from infrastructure upgrades.
 This includes road grade separations, noise barriers, and local road connections.
-The collaboration between CHSRA, design partners, and contractors is highly integrated.
+The collaboration between CHSRA, design partners, and constructors is highly integrated.
 Rigorous safety and systems commissioning is scheduled before launching commercial service.
 This includes testing traction power, train signaling, and track stability at high speeds.
 The completed rail system is a landmark for transit infrastructure in the United States.
@@ -1542,8 +1543,8 @@ The High-Speed Rail stands as a monument to modern, sustainable, and high-speed 
 Our commitment to quality, safety, and collaboration remains a key driver.
 The project highlights the potential of high-speed rail to transform regional mobility.
 We look forward to continuing our partnership to build the future of transit.`,
-    client: `California High-Speed Rail Authority`,
-    location: `Central Valley, California, USA`,
+    client: 'California High-Speed Rail Authority',
+    location: 'Central Valley, California, USA',
     value: `\$12 Billion`,
     scope: [
       `Elevated viaducts and overpasses`,
@@ -1557,8 +1558,8 @@ We look forward to continuing our partnership to build the future of transit.`,
       `Carbon-neutral construction supply chain`,
     ],
     timeline: '2015 - 2028',
-    contractor: 'DPR Construction',
-    subcontractor: 'Tutor Perini / Dragados / Flatiron (project package dependent)',
+    constructor: 'DPR Construction',
+    subconstructor: 'Tutor Perini / Dragados / Flatiron (project package dependent)',
   },
   {
     slug: 'gateway-program-hudson-tunnel',
@@ -1585,7 +1586,7 @@ Safety is managed through strict protocols, conducting comprehensive hazard asse
 The Hudson Tunnel Project will secure the transport link for the Northeast Corridor.
 This supports economic growth, transit reliability, and national security in the region.
 The local communities in New Jersey and New York benefit from jobs and improved transit.
-The collaboration between GDC, Amtrak, state agencies, and contractors is highly integrated.
+The collaboration between GDC, Amtrak, state agencies, and constructors is highly integrated.
 Rigorous safety and systems commissioning is scheduled before opening the new tunnels.
 This includes testing ventilation, fire protection, track drainage, and signaling systems.
 The completed tunnel system is a landmark for civil and tunnel engineering.
@@ -1596,8 +1597,8 @@ The Hudson Tunnel stands as a monument to modern, sustainable, and under-river e
 Our commitment to quality, safety, and collaboration remains a key driver.
 The project highlights the potential of advanced engineering to secure vital transport links.
 We look forward to continuing our partnership to build the Northeast's rail infrastructure.`,
-    client: `Gateway Development Commission`,
-    location: `New York / New Jersey, USA`,
+    client: 'Gateway Development Commission',
+    location: 'New York / New Jersey, USA',
     value: `\$16 Billion`,
     scope: [
       `Underwater tunnel boring and lining`,
@@ -1611,8 +1612,8 @@ We look forward to continuing our partnership to build the Northeast's rail infr
       `Fiber-reinforced concrete liners`,
     ],
     timeline: '2024 - 2035',
-    contractor: 'DPR Construction',
-    subcontractor: 'Skanska / Walsh / Frontier-Kemper (package dependent)',
+    constructor: 'DPR Construction',
+    subconstructor: 'Skanska / Walsh / Frontier-Kemper (package dependent)',
   },
   {
     slug: 'neom-saudi-arabia',
@@ -1637,7 +1638,7 @@ Safety is managed through strict protocols, conducting millions of safe man-hour
 The NEOM development will create a sustainable, high-capacity, and cognitive urban region.
 It will attract global investments in technology, tourism, and clean energy.
 The local region benefits from economic development, job creation, and infrastructure.
-The collaboration between NEOM, international design partners, and contractors is highly integrated.
+The collaboration between NEOM, international design partners, and constructors is highly integrated.
 Rigorous safety and systems commissioning is scheduled before launch.
 This will verify that the subterranean utility and transport networks are fully operational.
 The completed infrastructure is a landmark achievement for civil and smart city engineering.
@@ -1652,8 +1653,8 @@ Our team works closely with NEOM Company to ensure all structural engineering me
 The development incorporates high-capacity renewable energy grids designed to support millions of future residents.
 DPR's project management is key to maintaining the aggressive construction schedule across all active zones.
 This mega-project represents a major step forward in establishing cognitive and sustainable urban environments.`,
-    client: `NEOM Company`,
-    location: `Tabuk Province, Saudi Arabia`,
+    client: 'NEOM Company',
+    location: 'Tabuk Province, Saudi Arabia',
     value: `\$50 Billion`,
     scope: [
       `Deep structural excavation and piling`,
@@ -1667,8 +1668,8 @@ This mega-project represents a major step forward in establishing cognitive and 
       `AI-managed structural testing`,
     ],
     timeline: '2021 - 2030',
-    contractor: 'DPR Construction',
-    subcontractor: 'Bechtel / Webuild / FCC / Nesma (district dependent)',
+    constructor: 'DPR Construction',
+    subconstructor: 'Bechtel / Webuild / FCC / Nesma (district dependent)',
   },
   {
     slug: 'dogger-bank-wind-farm',
@@ -1693,7 +1694,7 @@ Safety is managed through strict offshore protocols, conducting millions of safe
 The Dogger Bank Wind Farm will generate enough clean electricity to power 6 million homes.
 This significantly reduces carbon emissions and reliance on fossil fuels in the UK.
 The local coastal communities benefit from jobs, port investments, and supply chain growth.
-The collaboration between SSE, Equinor, design partners, and contractors is highly structured.
+The collaboration between SSE, Equinor, design partners, and constructors is highly structured.
 Rigorous safety and systems commissioning verified that the wind farm operates flawlessly.
 This includes testing turbine rotation, HVDC power conversion, and grid connection.
 The completed wind farm is a landmark for offshore wind engineering globally.
@@ -1708,8 +1709,8 @@ This wind project will play a vital role in helping the United Kingdom meet its 
 The wind farm's operations and maintenance base will create long-term skilled jobs in the local coastal region.
 DPR's technical support ensures the structural integrity of the massive onshore and offshore substations.
 The successful completion of all three phases will set a new milestone for offshore wind energy globally.`,
-    client: `SSE Renewables & Equinor`,
-    location: `North Sea, United Kingdom`,
+    client: 'SSE Renewables & Equinor',
+    location: 'North Sea, United Kingdom',
     value: `\$11 Billion`,
     scope: [
       `Offshore turbine foundation structures`,
@@ -1723,8 +1724,8 @@ The successful completion of all three phases will set a new milestone for offsh
       `Wind direction modeling analysis`,
     ],
     timeline: '2020 - 2026',
-    contractor: 'DPR Construction',
-    subcontractor: 'SSE Renewables / Equinor / Jan De Nul (package dependent)',
+    constructor: 'DPR Construction',
+    subconstructor: 'SSE Renewables / Equinor / Jan De Nul (package dependent)',
   },
   {
     slug: 'bharatmala-pariyojna-india',
@@ -1750,7 +1751,7 @@ The Bharatmala project will significantly reduce transport costs and fuel consum
 It will support economic growth by connecting manufacturing hubs to maritime ports.
 The local communities along the expressways benefit from jobs and local road links.
 This includes service roads, pedestrian crossings, and local market connections.
-The collaboration between MoRTH, NHAI, state agencies, and contractors is highly integrated.
+The collaboration between MoRTH, NHAI, state agencies, and constructors is highly integrated.
 Rigorous road surface quality and deflection testing is scheduled before opening segments.
 This will verify that the expressways meet international highway safety standards.
 The completed road network is a landmark for transport infrastructure in India.
@@ -1767,8 +1768,8 @@ DPR's partnership with local agencies ensures that construction meets high durab
 These expressways are built with advanced drainage systems to manage India's monsoon rainfall effectively.
 Smart traffic management sensors are being installed to monitor flow and incident detection in real-time.
 The integration of solar-powered lighting systems along the route minimizes the total energy footprint.`,
-    client: `Ministry of Road Transport and Highways`,
-    location: `Nationwide, India`,
+    client: 'Ministry of Road Transport and Highways',
+    location: 'Nationwide, India',
     value: `\$35 Billion`,
     scope: [
       `Multi-lane concrete expressway paving`,
@@ -1782,8 +1783,8 @@ The integration of solar-powered lighting systems along the route minimizes the 
       `GPS-surveyed alignment pathing`,
     ],
     timeline: '2018 - 2026',
-    contractor: 'Multiple EPC Contractors (L&T, Dilip Buildcon, Ashoka Buildcon, IRB Infrastructure, etc.)',
-    subcontractor: 'DPR Construction',
+    constructor: 'Multiple EPC Constructors (L&T, Dilip Buildcon, Ashoka Buildcon, IRB Infrastructure, etc.)',
+    subconstructor: 'DPR Construction',
   },
   {
     slug: 'new-power-transformer-mfg',
@@ -1809,7 +1810,7 @@ Safety is managed through strict protocols, maintaining an excellent safety reco
 The manufacturing facility will support India's power sector by producing reliable transformers.
 This reduces reliance on imported equipment and supports the 'Make in India' initiative.
 The local community in Solan benefits from job creation and technical training opportunities.
-The collaboration between the Electricity Board, design partners, and contractors is highly coordinated.
+The collaboration between the Electricity Board, design partners, and constructors is highly coordinated.
 Rigorous commissioning of the cleanroom HVAC and high-voltage test systems is scheduled.
 This will verify that the facility meets international transformer manufacturing standards.
 The completed factory is a landmark for industrial technology in Himachal Pradesh.
@@ -1823,8 +1824,8 @@ We look forward to continuing our partnership to build India's electrical infras
 The facility is designed with high-grade seismic resistance to protect manufacturing operations in the hilly region.
 It also features energy-efficient lighting and smart building automation systems to reduce operational costs.
 DPR remains committed to delivering state-of-the-art industrial spaces that support national power grid upgrades.`,
-    client: `State Electricity Board`,
-    location: `Solan, Himachal Pradesh, India`,
+    client: 'State Electricity Board',
+    location: 'Solan, Himachal Pradesh, India',
     value: `\$120 Million`,
     scope: [
       `Dust-free cleanroom manufacturing bays`,
@@ -1838,8 +1839,8 @@ DPR remains committed to delivering state-of-the-art industrial spaces that supp
       `Precision-controlled HVAC units`,
     ],
     timeline: '2023 - 2025',
-    contractor: 'PVJ Power Solutions Pvt. Ltd.',
-    subcontractor: 'DPR Construction',
+    constructor: 'PVJ Power Solutions Pvt. Ltd.',
+    subconstructor: 'DPR Construction',
   },
   {
     slug: 'jfk-airport-expansion',
@@ -1866,7 +1867,7 @@ Safety is managed through strict protocols, conducting millions of safe man-hour
 The JFK expansion will significantly improve the travel experience for millions of passengers.
 It will support economic growth, tourism, and national security in the region.
 The local communities in Queens benefit from job creation and local infrastructure links.
-The collaboration between the Port Authority, airlines, design partners, and contractors is highly integrated.
+The collaboration between the Port Authority, airlines, design partners, and constructors is highly integrated.
 Rigorous safety and systems commissioning is scheduled before launching terminal operations.
 This will verify that the baggage handling, security, and passenger gates operate flawlessly.
 The completed terminal expansion is a landmark for airport engineering globally.
@@ -1877,8 +1878,8 @@ The JFK Expansion stands as a testament to modern, sustainable, and high-capacit
 Our commitment to quality, safety, and collaboration remains a key driver.
 The project highlights the potential of integrated terminal design to transform aviation.
 We look forward to continuing our partnership to build the nation's transport infrastructure.`,
-    client: `Port Authority of NY & NJ`,
-    location: `Queens, New York, USA`,
+    client: 'Port Authority of NY & NJ',
+    location: 'Queens, New York, USA',
     value: `\$9.5 Billion`,
     scope: [
       `Terminal structural steel frameworks`,
@@ -1892,8 +1893,8 @@ We look forward to continuing our partnership to build the nation's transport in
       `Sustainable Terminal design LEED Gold`,
     ],
     timeline: '2020 - 2028',
-    contractor: 'DPR Construction',
-    subcontractor: 'Turner Construction',
+    constructor: 'DPR Construction',
+    subconstructor: 'Turner Construction',
   },
   {
     slug: 'sunzia-wind-transmission',
@@ -1919,7 +1920,7 @@ The SunZia project will supply clean electricity to power over 3 million homes.
 This significantly reduces carbon emissions and reliance on fossil fuels in the western US.
 The local rural communities along the corridor benefit from jobs and lease payments.
 This includes county road upgrades, local investments, and training programs.
-The collaboration between Pattern Energy, state regulatory bodies, and contractors is highly integrated.
+The collaboration between Pattern Energy, state regulatory bodies, and constructors is highly integrated.
 Rigorous grid synchronization and HVDC transmission testing is scheduled before launch.
 This will verify that the power flow is stable and secure across the multi-state line.
 The completed transmission link is a landmark for clean energy and grid engineering.
@@ -1933,8 +1934,8 @@ We look forward to continuing our partnership to build the nation's energy infra
 The transmission lines will enable western states to access high-capacity wind energy during peak demand hours.
 This project serves as a model for regional power grid expansion and clean energy transition.
 DPR is committed to supporting Pattern Energy in delivering this historic and sustainable project.`,
-    client: `Pattern Energy`,
-    location: `New Mexico / Arizona, USA`,
+    client: 'Pattern Energy',
+    location: 'New Mexico / Arizona, USA',
     value: `\$8 Billion`,
     scope: [
       `Wind turbine generator array installation`,
@@ -1948,8 +1949,8 @@ DPR is committed to supporting Pattern Energy in delivering this historic and su
       `Laser-guided cable stringing`,
     ],
     timeline: '2023 - 2026',
-    contractor: 'DPR Construction',
-    subcontractor: 'Quanta Services',
+    constructor: 'DPR Construction',
+    subconstructor: 'Quanta Services',
   },
   {
     slug: 'national-maritime-heritage-complex',
@@ -1976,7 +1977,7 @@ The Maritime Heritage Complex will boost tourism and economic growth in the Loth
 It will create jobs and support local artisans by showcasing historical models.
 The local communities benefit from infrastructure upgrades and road connections.
 This includes new local roads, parking plazas, and public transport links.
-The collaboration between the Ministry, archaeological experts, and contractors is highly successful.
+The collaboration between the Ministry, archaeological experts, and constructors is highly successful.
 Rigorous testing of the water circulation and natural cooling systems is scheduled before launch.
 This will verify that the dockyard and museum galleries are fully functional and sustainable.
 The completed complex is a landmark for heritage preservation and architecture in India.
@@ -1987,8 +1988,8 @@ The Heritage Complex stands as a monument to sustainable architecture and histor
 Our commitment to quality, safety, and collaboration remains a key driver in India.
 The project highlights the potential of combining modern engineering with historical designs.
 We look forward to continuing our partnership to build India's heritage infrastructure.`,
-    client: `Ministry of Ports, Shipping and Waterways`,
-    location: `Lothal, Gujarat, India`,
+    client: 'Ministry of Ports, Shipping and Waterways',
+    location: 'Lothal, Gujarat, India',
     value: `\$350 Million`,
     scope: [
       `Museum and gallery building structures`,
@@ -2002,8 +2003,8 @@ We look forward to continuing our partnership to build India's heritage infrastr
       `High-capacity water recycling loops`,
     ],
     timeline: '2022 - 2026',
-    contractor: 'Tata Projects',
-    subcontractor: 'DPR Construction',
+    constructor: 'Tata Projects',
+    subconstructor: 'DPR Construction',
   },
   {
     slug: 'ahmedabad-dholera-express',
@@ -2029,7 +2030,7 @@ The Ahmedabad-Dholera Express will significantly reduce travel times for cargo a
 It will support the economic development of Dholera SIR, attracting global manufacturing industries.
 The local communities along the expressway benefit from jobs and local road links.
 This includes service lanes, agricultural underpasses, and pedestrian bridges.
-The collaboration between NHAI, state agencies, and contractors is highly successful.
+The collaboration between NHAI, state agencies, and constructors is highly successful.
 Rigorous road surface quality and structural load testing is scheduled before opening.
 This will verify that the expressway meets international highway safety standards.
 The completed expressway is a landmark for road infrastructure in Gujarat.
@@ -2043,8 +2044,8 @@ We look forward to continuing our partnership to build India's highway transport
 This expressway corridor will serve as a vital link for the upcoming Dholera international airport and cargo hubs.
 It will also feature green belts along the median to reduce vehicular noise and absorb carbon emissions.
 DPR's project team remains committed to the highest quality, safety, and coordination standards throughout construction.`,
-    client: `National Highway Authority of India (NHAI)`,
-    location: `Gujarat, India`,
+    client: 'National Highway Authority of India (NHAI)',
+    location: 'Gujarat, India',
     value: `\$650 Million`,
     scope: [
       `109km multi-lane concrete roadway`,
@@ -2058,7 +2059,800 @@ DPR's project team remains committed to the highest quality, safety, and coordin
       `Smart LED lane lighting networks`,
     ],
     timeline: '2021 - 2025',
-    contractor: 'Larsen & Toubro (major package contractor)',
-    subcontractor: 'DPR Construction',
+    constructor: 'Larsen & Toubro (major package constructor)',
+    subconstructor: 'DPR Construction',
+  },
+  {
+    slug: 'visakhapatnam-chennai-industrial-corridor',
+    title: `Visakhapatnam-Chennai Industrial Corridor – India`,
+    date: 'Mar 12, 2026',
+    category: 'Infrastructure',
+    image: '/Visakhapatnam-Chennai Industrial Corridor.png',
+    overview: `The Visakhapatnam-Chennai Industrial Corridor (VCIC) is a key industrial corridor in India, part of the East Coast Economic Corridor (ECEC).
+It spans across multiple coastal districts in Andhra Pradesh, designed to stimulate industrial growth, manufacturing capacity, and high-velocity trade.
+The project is promoted by the National Industrial Corridor Development Corporation (NICDC) and the Government of Andhra Pradesh, with financial support from the Asian Development Bank (ADB).
+The goal is to develop smart industrial nodes, high-speed road networks, and advanced utility services to attract global manufacturing companies.
+The scope of work is divided into multiple phases, beginning with node infrastructure development in regions like Yerpedu-Srikalahasti and Visakhapatnam.
+DPR Construction's engineering team coordinates structural layouts, utility corridors, and environmental management systems.
+The corridor's primary utility systems include industrial water supply, power transmission, and specialized waste treatment facilities.
+All major structures utilize modern, durable concrete specifications engineered for coastal environmental conditions.
+BIM coordination is used to design the node connectivity networks and prevent space conflicts with existing grids.
+Prefabricated components are extensively used in building drainage and bridge systems along the corridor.
+This accelerates the construction timeline and enhances safety for high-altitude installation work.
+Safety is monitored in real-time, targeting zero-harm operations across all construction zones.
+VCIC is designed to integrate with regional ports, including Visakhapatnam and Krishnapatnam, to enable seamless import-export logistics.
+The project integrates sustainable design features, including solar-powered utility corridors and localized water harvesting systems.
+Local communities along the alignment benefit from economic development and high-value jobs.
+The collaboration between NICDC, state authorities, and constructors is highly integrated.
+Rigorous safety audits and pavement testing are conducted to verify compliance with national highways standards.
+This ensures a long-term, low-maintenance lifespan for the high-velocity corridor.
+DPR is proud to support the delivery of this critical transport and industrial infrastructure project.
+The corridor stands as a benchmark for modern, sustainable, and high-speed industrial engineering.`,
+    client: 'National Industrial Corridor Development Corporation (NICDC) / Government of Andhra Pradesh',
+    location: 'Andhra Pradesh, India',
+    value: `\$5 Billion`,
+    scope: [
+      `Industrial node site development and grading`,
+      `Connectivity roads and high-speed highway expansion`,
+      `Water supply networks and industrial wastewater systems`,
+      `Power distribution network and substation upgrades`,
+    ],
+    innovations: [
+      `BIM-coordinated utility corridor layouts`,
+      `Smart water metering and reuse networks`,
+      `Environmentally sensitive coastal zone design`,
+    ],
+    timeline: '2016 - 2028',
+    companies: [
+      `National Industrial Corridor Development Corporation (NICDC) – Managing Authority`,
+      `Asian Development Bank (ADB) – Funding Partner`,
+      `Larsen & Toubro (L&T) – Construction Partner`,
+      `DPR Construction – General Constructor`,
+    ],
+    implementingAgency: 'NICDC / Andhra Pradesh Industrial Infrastructure Corporation (APIIC)',
+    purpose: `The Visakhapatnam-Chennai Industrial Corridor is being developed to boost manufacturing, trade, and economic growth along India's east coast. It aims to integrate industrial nodes with ports to enable seamless import-export logistics, create high-value employment, and attract global investments. By designing smart utility systems and high-speed transport networks, the corridor enhances national competitiveness and supports sustainable regional development.`,
+    constructor: 'Larsen & Toubro (L&T)',
+    subconstructor: 'DPR Construction',
+  },
+  {
+    slug: 'sagarmala-project-india',
+    title: `Sagarmala Project – India`,
+    date: 'Feb 28, 2026',
+    category: 'Infrastructure',
+    image: '/Sagarmala Project.png',
+    overview: `The Sagarmala Project is India's flagship program for port-led development, designed to modernize ports and harness the country's 7,500 km coastline.
+Managed by the Ministry of Ports, Shipping and Waterways, the program aims to reduce logistics costs for domestic and EXIM cargo.
+The scope of the project spans port modernization, port connectivity, port-linked industrialization, and coastal community development.
+DPR Construction's engineering team coordinates structural layouts, port utility corridors, and marine engineering workflows.
+The modernization efforts include the construction of deep-draft berths, terminal automation, and dredging for larger vessels.
+All major structures utilize modern, durable concrete specifications engineered for marine environmental conditions.
+BIM coordination is used to design the port connectivity rail and road networks, preventing space conflicts with existing grids.
+Prefabricated concrete segments are extensively used in building breakwaters and terminal buildings.
+This accelerates the construction timeline and enhances safety for high-altitude installation work.
+Safety is monitored in real-time, targeting zero-harm operations across all construction zones.
+The project integrates sustainable design features, including solar-powered port utilities and localized water harvesting systems.
+Local communities along the coastline benefit from economic development, fisheries modernization, and high-value jobs.
+The collaboration between port authorities, state governments, and constructors is highly integrated.
+Rigorous safety audits and concrete quality testing are conducted to verify compliance with marine engineering standards.
+This ensures a long-term, low-maintenance lifespan for the port structures.
+DPR is proud to support the delivery of this critical maritime infrastructure project.
+The project stands as a benchmark for modern, sustainable, and high-speed marine engineering.`,
+    client: 'Ministry of Ports, Shipping and Waterways',
+    location: 'Coastal Regions, India',
+    value: `\$120 Billion`,
+    scope: [
+      `Port capacity modernization and terminal automation`,
+      `Rail and road port-connectivity corridors`,
+      `Coastal shipping and inland waterways integration`,
+      `Maritime industrial clusters and smart cities`,
+    ],
+    innovations: [
+      `Automated container terminal handling systems`,
+      `Prefabricated breakwater structures`,
+      `Real-time vessel and cargo logistics tracking`,
+    ],
+    timeline: '2015 - 2035',
+    companies: [
+      `Ministry of Ports, Shipping and Waterways – Project Owner`,
+      `Sagarmala Development Company Limited (SDCL) – Executing Agency`,
+      `Afcons Infrastructure – Marine Construction Partner`,
+      `DPR Construction – General Constructor`,
+    ],
+    implementingAgency: 'Ministry of Ports, Shipping and Waterways / Port Authorities',
+    purpose: `The Sagarmala Project is developed to transform India's logistics sector by leveraging its extensive coastline and waterways. It aims to reduce logistics costs, improve port efficiency, and boost port-linked manufacturing. By modernizing ports and improving rail/road connectivity, the project enhances trade competitiveness and supports economic development in coastal communities through job creation and infrastructure expansion.`,
+    constructor: 'Afcons Infrastructure',
+    subconstructor: 'DPR Construction',
+  },
+  {
+    slug: 'bengaluru-suburban-railway',
+    title: `Bengaluru Suburban Railway Project – India`,
+    date: 'Jan 22, 2026',
+    category: 'Infrastructure',
+    image: '/Bengaluru Suburban Railway Project.png',
+    overview: `The Bengaluru Suburban Railway Project (BSRP) is a dedicated suburban railway system designed for Bengaluru city and its suburbs.
+Spanning across 148 km with 4 distinct corridors, the project aims to reduce traffic congestion and provide high-capacity transit.
+The project is managed by the Rail Infrastructure Development Company (Karnataka) Limited (K-RIDE), a joint venture of the Government of Karnataka and Ministry of Railways.
+The goal is to connect Bengaluru's commercial hubs, residential areas, and airport with a modern, eco-friendly rail network.
+The scope of work includes track laying, station building construction, overhead electrification, and signaling installation.
+DPR Construction's engineering team coordinates structural layouts, station utility design, and track laying workflows.
+The stations feature integrated multi-modal transit designs, allowing seamless transfer to metro, bus, and rail networks.
+All major structures utilize modern, durable concrete specifications engineered for urban transit environments.
+BIM coordination is used to design the elevated structures and prevent space conflicts with existing city grids.
+Prefabricated concrete girders are extensively used in building elevated viaducts and station platforms.
+This accelerates the construction timeline and enhances safety for high-altitude installation work.
+Safety is monitored in real-time, targeting zero-harm operations across all construction zones.
+The project integrates sustainable design features, including solar-integrated elevated station roofs and localized water harvesting systems.
+Local communities along the rail corridors benefit from economic development and high-value transit options.
+The collaboration between K-RIDE, state authorities, and constructors is highly integrated.
+Rigorous safety audits and track testing are conducted to verify compliance with national railway standards.
+This ensures a long-term, low-maintenance lifespan for the suburban rail network.
+DPR is proud to support the delivery of this critical transit infrastructure project.
+The project stands as a benchmark for modern, sustainable, and high-speed rail engineering.`,
+    client: 'Rail Infrastructure Development Company (Karnataka) Limited (K-RIDE)',
+    location: 'Bengaluru, Karnataka, India',
+    value: `\$2.1 Billion`,
+    scope: [
+      `148 km suburban rail network across 4 corridors`,
+      `Construction of elevated and at-grade stations`,
+      `Track laying and overhead electrification systems`,
+      `Integrated ticketing and transit hubs`,
+    ],
+    innovations: [
+      `Communication-Based Train Control (CBTC) signaling`,
+      `Solar-integrated elevated station roofs`,
+      `Modular prefabricated precast bridge girders`,
+    ],
+    timeline: '2020 - 2028',
+    companies: [
+      `Rail Infrastructure Development Company (Karnataka) Limited (K-RIDE) – Project Owner`,
+      `Government of Karnataka – Joint Venture Partner`,
+      `Larsen & Toubro (L&T) – Construction Partner`,
+      `DPR Construction – General Constructor`,
+    ],
+    implementingAgency: 'K-RIDE / Ministry of Railways / Government of Karnataka',
+    purpose: `The Bengaluru Suburban Railway Project is developed to solve Bengaluru's urban mobility issues by providing a dedicated suburban transit system. It aims to reduce traffic congestion, lower carbon emissions, and connect suburbs with the city center. By integrating suburban rail with metro and bus systems, the project provides seamless travel, boosts local productivity, and supports long-term economic growth.`,
+    constructor: 'Larsen & Toubro (L&T)',
+    subconstructor: 'DPR Construction',
+  },
+  {
+    slug: 'jsw-green-energy-projects',
+    title: `JSW Group's Green Energy Projects – India`,
+    date: 'Jan 05, 2026',
+    category: 'Infrastructure',
+    image: '/JSW Group_s Green Energy Projects.png',
+    overview: `JSW Group's Green Energy Projects represent a massive utility-scale renewable energy expansion across multiple states in India.
+Managed by JSW Energy Limited, the program focuses on developing wind and solar power complexes to support India's net-zero transition.
+The project portfolio includes high-capacity wind farms and solar PV arrays, designed to power heavy industrial manufacturing.
+DPR Construction's engineering team coordinates structural layouts, transmission lines, and green substation engineering workflows.
+The installation efforts include erecting wind turbine generators, mounting solar panels, and grid synchronization.
+All major structures utilize modern, durable concrete specifications engineered for various environmental conditions.
+BIM coordination is used to design the collection grid and transmission lines, preventing space conflicts with existing grids.
+Prefabricated components are extensively used in building substation structures and control rooms.
+This accelerates the construction timeline and enhances safety for high-altitude installation work.
+Safety is monitored in real-time, targeting zero-harm operations across all construction zones.
+The project integrates sustainable design features, including solar-powered operations and localized water harvesting systems.
+Local communities around the project sites benefit from clean power, grid reliability, and high-value jobs.
+The collaboration between JSW Energy, state utilities, and constructors is highly integrated.
+Rigorous safety audits and power grid testing are conducted to verify compliance with national energy standards.
+This ensures a long-term, low-maintenance lifespan for the renewable generation assets.
+DPR is proud to support the delivery of this critical clean energy infrastructure project.
+The project stands as a benchmark for modern, sustainable, and high-speed renewable engineering.`,
+    client: 'JSW Energy Limited',
+    location: 'Karnataka, Maharashtra, and Tamil Nadu, India',
+    value: `\$3.8 Billion`,
+    scope: [
+      `Installation of 2.5 GW wind turbine generation complexes`,
+      `Large-scale solar PV array fields and substations`,
+      `High-voltage grid connection transmission lines`,
+      `Centralized renewable energy control centers`,
+    ],
+    innovations: [
+      `Smart SCADA analytics for turbine pitch control`,
+      `Advanced dry-cleaning robotic solar panel systems`,
+      `High-capacity battery energy storage systems (BESS)`,
+    ],
+    timeline: '2021 - 2030',
+    companies: [
+      `JSW Energy Limited – Project Owner`,
+      `Suzlon Energy – Wind Turbine Supply & Installation Partner`,
+      `DPR Construction – General Constructor`,
+    ],
+    implementingAgency: 'JSW Energy Limited / State Electricity Boards',
+    purpose: `JSW Group's Green Energy Projects are developed to provide reliable and clean power, supporting India's carbon reduction commitments. The project aims to decarbonize heavy industry, increase the share of renewable energy in the national grid, and provide stable power. By integrating wind, solar, and battery storage, the project demonstrates a scalable approach to sustainable power generation.`,
+    constructor: 'Suzlon Energy',
+    subconstructor: 'DPR Construction',
+  },
+  {
+    slug: 'dholera-smart-city-project',
+    title: `Dholera Smart City Project – India`,
+    date: 'Dec 15, 2025',
+    category: 'Infrastructure',
+    image: '/Dholera Smart City Project.png',
+    overview: `The Dholera Smart City Project, part of the Dholera Special Investment Region (DSIR), is a flagship greenfield smart industrial city in Gujarat.
+Promoted by Dholera Industrial City Development Limited (DICDL), the city is designed to be a global manufacturing and trading hub.
+The smart city integrates advanced digital infrastructure, automated waste collection, district cooling, and a massive solar park.
+DPR Construction's engineering team coordinates structural layouts, subterranean utility tunnels, and ICT infrastructure.
+The utility tunnel coordinates power, water, telecom, and gas lines, preventing road excavation and ensuring low-maintenance logistics.
+All major structures utilize modern, durable concrete specifications engineered for high-durability urban conditions.
+BIM coordination is used to design the utility corridors and road networks, preventing space conflicts with existing grids.
+Prefabricated concrete segments are extensively used in building utility tunnels and admin complexes.
+This accelerates the construction timeline and enhances safety for high-altitude installation work.
+Safety is monitored in real-time, targeting zero-harm operations across all construction zones.
+The project integrates sustainable design features, including district cooling systems and localized water harvesting.
+Local communities within the region benefit from economic development, industrial jobs, and modern urban infrastructure.
+The collaboration between DICDL, Gujarat government, and constructors is highly integrated.
+Rigorous safety audits and utility systems testing are conducted to verify compliance with smart city standards.
+This ensures a long-term, low-maintenance lifespan for the urban infrastructure.
+DPR is proud to support the delivery of this landmark greenfield smart city project.
+The project stands as a benchmark for modern, sustainable, and technology-driven urban engineering.`,
+    client: 'Dholera Industrial City Development Limited (DICDL)',
+    location: 'Dholera, Gujarat, India',
+    value: `\$15 Billion`,
+    scope: [
+      `Greenfield smart city core infrastructure development`,
+      `Underground utility tunnels and automated waste conduits`,
+      `Centralized water management and desalination networks`,
+      `Administrative and ICT smart governance centers`,
+    ],
+    innovations: [
+      `Centralized IoT smart city command center (SCADA)`,
+      `Centralized vacuum waste suction pipelines`,
+      `Prefabricated subterranean utility corridors`,
+    ],
+    timeline: '2013 - 2040',
+    companies: [
+      `Dholera Industrial City Development Limited (DICDL) – Developer`,
+      `Larsen & Toubro (L&T) – Lead Construction Constructor`,
+      `DPR Construction – General Constructor`,
+    ],
+    implementingAgency: 'DICDL / Gujarat Infrastructure Development Board (GIDB)',
+    purpose: `The Dholera Smart City Project is developed to create a world-class smart industrial city that attracts manufacturing and trade. It aims to provide advanced urban utility infrastructure, reduce pollution, and promote renewable energy through integrated solar parks. By designing underground utility tunnels and automated waste collection, the project demonstrates sustainable and efficient urban development.`,
+    constructor: 'Larsen & Toubro (L&T)',
+    subconstructor: 'DPR Construction',
+  },
+  {
+    slug: 'ganga-vikas-riverfront-india',
+    title: `Ganga Vikas Project (Riverfront) – India`,
+    date: 'Nov 20, 2025',
+    category: 'Infrastructure',
+    image: '/Ganga Vikas Project Riverfront.png',
+    overview: `The Ganga Vikas Project (Riverfront) is a key riverfront development program, part of the national Namami Gange initiative.
+Managed by the National Mission for Clean Ganga (NMCG), the project aims to clean, conserve, and beautify the riverfront areas.
+The scope of work spans bank stabilization, ghat reconstruction, promenade construction, and sewage outfall management.
+DPR Construction's engineering team coordinates structural layouts, river wall construction, and public amenity structures.
+The stabilization efforts include bio-engineered bank stabilization, retaining walls, and stepped promenade designs.
+All major structures utilize modern, durable concrete specifications engineered for high-flow river environments.
+BIM coordination is used to design the promenades and map utility networks, preventing space conflicts with existing grids.
+Prefabricated concrete modules are extensively used in building steps (ghats) and walking paths.
+This accelerates the construction timeline and enhances safety for high-altitude installation work.
+Safety is monitored in real-time, targeting zero-harm operations across all construction zones.
+The project integrates sustainable design features, including solar-powered riverfront lighting and localized water treatment.
+Local communities along the Ganges benefit from clean environment, tourism opportunities, and high-value public spaces.
+The collaboration between NMCG, municipal corporations, and constructors is highly integrated.
+Rigorous safety audits and river wall load testing are conducted to verify compliance with hydraulic engineering standards.
+This ensures a long-term, low-maintenance lifespan for the riverfront structures.
+DPR is proud to support the delivery of this critical public and environmental infrastructure project.
+The project stands as a benchmark for modern, sustainable, and high-speed riverfront engineering.`,
+    client: 'National Mission for Clean Ganga (NMCG)',
+    location: 'Uttar Pradesh and Bihar, India',
+    value: `\$1.5 Billion`,
+    scope: [
+      `Riverfront promenade construction and landscaping`,
+      `Sewerage treatment plant integration and outfall pipelines`,
+      `Ghat reconstruction and bank stabilization structures`,
+      `Public sanitation and tourist facilities development`,
+    ],
+    innovations: [
+      `Bio-engineered bank stabilization grids`,
+      `Real-time river water quality sensors`,
+      `Precast concrete stepped promenade modules`,
+    ],
+    timeline: '2015 - 2025',
+    companies: [
+      `National Mission for Clean Ganga (NMCG) – Project Owner`,
+      `Dilip Buildcon – Construction Partner`,
+      `DPR Construction – General Constructor`,
+    ],
+    implementingAgency: 'NMCG / Ministry of Jal Shakti',
+    purpose: `The Ganga Vikas Project is developed to restore and beautify the riverfront areas of the Ganges, promoting environmental conservation and public health. It aims to prevent untreated sewage from entering the river, stabilize banks against erosion, and create sustainable public spaces for tourism. By designing modern promenades and waste treatment networks, the project improves the urban environment and supports cultural heritage.`,
+    constructor: 'Dilip Buildcon',
+    subconstructor: 'DPR Construction',
+  },
+  {
+    slug: 'mysore-wind-power-project',
+    title: `Mysore Wind Power Project – India`,
+    date: 'Oct 15, 2025',
+    category: 'Infrastructure',
+    image: '/Mysore Wind Power Project.png',
+    overview: `The Mysore Wind Power Project represents a flagship utility-scale clean energy development located in Karnataka.
+Managed by the Karnataka Renewable Energy Development Limited (KREDL), the project feeds clean power into the regional grid.
+The wind farm features 120 high-efficiency turbine towers, designed to harness steady wind resources in the region.
+DPR Construction's engineering team coordinates structural foundations, turbine erection, and substation link workflows.
+The installation efforts include pouring heavy foundations, assembling steel turbine towers, and mounting composite blades.
+All major structures utilize modern, durable concrete specifications engineered for high-wind mechanical loads.
+BIM coordination is used to design the collection cabling and substation links, preventing space conflicts with existing grids.
+Prefabricated steel and concrete sections are extensively used in building turbine towers and control buildings.
+This accelerates the construction timeline and enhances safety for high-altitude installation work.
+Safety is monitored in real-time, targeting zero-harm operations across all construction zones.
+The project integrates sustainable design features, including solar-powered operations and localized water harvesting systems.
+Local communities around the project site benefit from grid reliability, local infrastructure upgrades, and high-value jobs.
+The collaboration between KREDL, state utility boards, and constructors is highly integrated.
+Rigorous safety audits and turbine rotation testing are conducted to verify compliance with national grid standards.
+This ensures a long-term, low-maintenance lifespan for the wind power generation assets.
+DPR is proud to support the delivery of this critical wind energy infrastructure project.
+The project stands as a benchmark for modern, sustainable, and high-speed wind engineering.`,
+    client: 'Karnataka Renewable Energy Development Limited (KREDL)',
+    location: 'Mysore, Karnataka, India',
+    value: `\$250 Million`,
+    scope: [
+      `Erection of 120 high-efficiency wind turbine towers`,
+      `Construction of access roads and turbine foundations`,
+      `High-voltage grid connection substations`,
+      `Underground collection cabling network`,
+    ],
+    innovations: [
+      `Advanced wind flow LiDAR resource mapping`,
+      `Prefabricated high-altitude steel-concrete towers`,
+      `Smart grid synchronization control platforms`,
+    ],
+    timeline: '2022 - 2025',
+    companies: [
+      `Karnataka Renewable Energy Development Limited (KREDL) – Project Nodal Agency`,
+      `ReNew Power – Clean Energy Developer Partner`,
+      `DPR Construction – General Constructor`,
+    ],
+    implementingAgency: 'KREDL / Government of Karnataka',
+    purpose: `The Mysore Wind Power Project is developed to provide clean, renewable energy to the state grid, reducing carbon emissions and dependency on fossil fuels. It aims to leverage local wind resources to meet Karnataka's growing industrial power demand, create local employment, and support sustainable regional energy security.`,
+    constructor: 'ReNew Power',
+    subconstructor: 'DPR Construction',
+  },
+  {
+    slug: 'surat-wind-energy-project',
+    title: `Surat Wind Energy Project – India`,
+    date: 'Sep 10, 2025',
+    category: 'Infrastructure',
+    image: '/Surat Wind Energy Project.png',
+    overview: `The Surat Wind Energy Project represents a coastal clean energy development located in Gujarat.
+Managed by the Gujarat Energy Development Agency (GEDA), the project provides clean energy to Surat's industrial and residential zones.
+The wind farm features high-capacity coastal turbines, designed to capture marine wind currents and withstand corrosive environments.
+DPR Construction's engineering team coordinates structural foundations, anti-corrosion protection, and substation connection workflows.
+The installation efforts include pouring heavy foundations, assembling steel towers, and installing SCADA control loops.
+All major structures utilize modern, durable concrete specifications engineered for high-salinity coastal loads.
+BIM coordination is used to design the collection grid and connection lines, preventing space conflicts with existing grids.
+Prefabricated composite blades and substation segments are extensively used to accelerate structural assembly.
+This accelerates the construction timeline and enhances safety for high-altitude installation work.
+Safety is monitored in real-time, targeting zero-harm operations across all construction zones.
+The project integrates sustainable design features, including coastal ecosystem monitoring and clean energy operations.
+Local communities around Surat benefit from clean power, grid reliability, and high-value industrial jobs.
+The collaboration between GEDA, state utilities, and constructors is highly integrated.
+Rigorous safety audits and turbine rotation testing are conducted to verify compliance with national energy standards.
+This ensures a long-term, low-maintenance lifespan for the coastal generation assets.
+DPR is proud to support the delivery of this critical clean energy infrastructure project.
+The project stands as a benchmark for modern, sustainable, and high-speed coastal wind engineering.`,
+    client: 'Gujarat Energy Development Agency (GEDA)',
+    location: 'Surat, Gujarat, India',
+    value: `\$300 Million`,
+    scope: [
+      `Erection of 150 MW coastal wind power turbines`,
+      `High-durability coastal turbine foundations and corrosion protection`,
+      `Integration with the GEDA regional grid transmission lines`,
+      `Automated SCADA control and monitoring system`,
+    ],
+    innovations: [
+      `Marine-grade anti-corrosion composite coatings`,
+      `Low-wind-speed high-efficiency blade designs`,
+      `Real-time grid loading power output analytics`,
+    ],
+    timeline: '2023 - 2025',
+    companies: [
+      `Gujarat Energy Development Agency (GEDA) – Nodal Agency`,
+      `Adani Green Energy – Renewable Energy Developer Partner`,
+      `DPR Construction – General Constructor`,
+    ],
+    implementingAgency: 'GEDA / Government of Gujarat',
+    purpose: `The Surat Wind Energy Project is developed to harness coastal wind resources to generate clean power, supporting Gujarat's clean energy targets. It aims to reduce carbon emissions from Surat's manufacturing hubs, provide stable grid power, and promote coastal sustainable infrastructure development.`,
+    constructor: 'Adani Green Energy',
+    subconstructor: 'DPR Construction',
+  },
+  {
+    slug: 'puga-geothermal-energy',
+    title: `Puga Geothermal Energy Project – India`,
+    date: 'May 15, 2026',
+    category: 'Infrastructure',
+    image: '/Puga Geothermal Energy Project.png',
+    overview: `The Puga Geothermal Energy Project represents a pioneering clean energy initiative located in the high-altitude Puga Valley of Ladakh.
+As India's first geothermal power project, the development aims to tap into the region's significant geothermal reservoir to generate zero-carbon base-load electricity and provide direct heating solutions.
+The project is developed under a tripartite agreement involving the Oil and Natural Gas Corporation (ONGC) Energy Centre, the LAHDC Leh, and the Power Department of Ladakh.
+The engineering works are designed to withstand extreme sub-zero temperatures, high seismic activity, and high-altitude transport logistics.
+The pilot phase comprises drilling geothermal wells to depths of over 500 meters and installing a 1 MW pilot binary cycle power plant.
+DPR Construction's technical team provides construction management, concrete foundation design, and utility coordination.
+Specialized geothermal steam pipes and heat exchange systems are engineered to prevent thermal loss in freezing winter climates.
+The concrete foundations utilize low-heat hydration mixes with thermal insulation jackets to ensure structural integrity in permafrost soils.
+BIM coordination is used to design the site layout, pipelines, and connection routes to the regional power grid.
+Prefabricated structural sections for the power plant housing are assembled on site to minimize high-altitude labor congestion.
+Safety is monitored in real-time under extreme climate protocols, targeting zero-harm operations.
+The geothermal plant will provide continuous, stable power to remote communities, reducing their reliance on carbon-intensive diesel generators.
+The direct heat from geothermal fluid will be utilized for greenhouse heating, space heating, and tourism wellness facilities.
+The collaboration between ONGC, regional authorities, and constructors represents a milestone for clean energy in India.
+Rigorous reservoir pressure and steam flow testing are conducted to verify long-term geothermal capacity.
+This ensures a sustainable, low-maintenance generation cycle for the high-altitude energy hub.
+DPR is proud to support the delivery of this landmark green energy infrastructure project.
+The Puga geothermal site stands as a benchmark for high-altitude clean energy engineering.`,
+    client: 'Oil and Natural Gas Corporation (ONGC) / Government of Ladakh',
+    location: 'Puga Valley, Ladakh, India',
+    value: `\$50 Million`,
+    scope: [
+      `Geothermal well drilling and reservoir exploration`,
+      `Construction of a pilot 1 MW binary cycle power plant`,
+      `District heating infrastructure piping networks`,
+      `Transmission line and regional grid connection integration`,
+    ],
+    innovations: [
+      `High-altitude geothermal well drilling technology`,
+      `Binary fluid heat exchange systems for low temperature reservoirs`,
+      `Sustainable direct heating utilization loops in permafrost`,
+    ],
+    timeline: '2022 - 2026',
+    companies: [
+      `Oil and Natural Gas Corporation (ONGC) – Developer`,
+      `ONGC Energy Centre – Technical Nodal Agency`,
+      `Ladakh Autonomous Hill Development Council (LAHDC) – Partner`,
+      `DPR Construction – General Constructor`,
+    ],
+    implementingAgency: 'ONGC Energy Centre / Power Department of Ladakh',
+    purpose: `The Puga Geothermal Energy Project is developed as India's first geothermal power plant to exploit the geothermal potential of the Puga Valley. It aims to provide a clean, continuous, and local source of power and heating for the remote Ladakh region, reducing its dependency on diesel generators and supporting sustainable, zero-carbon high-altitude development.`,
+    constructor: 'ONGC Energy Centre',
+    subconstructor: 'DPR Construction',
+  },
+  {
+    slug: 'tata-electronics-semiconductor-facility',
+    title: `Tata Electronics Semiconductor Facility – India`,
+    date: 'Apr 20, 2026',
+    category: 'Technology',
+    image: '/Tata Electronics Semiconductor Facility.png',
+    overview: `The Tata Electronics Semiconductor Facility is a landmark high-tech development project aimed at establishing India's first commercial semiconductor fabrication and packaging facility.
+Located in Dholera, Gujarat / Jagiroad, Assam, the facility represents a key milestone for the country's domestic microchip supply chain and electronic manufacturing goals.
+The project is developed by Tata Electronics Private Limited (TEPL), in partnership with leading global semiconductor technology providers.
+The construction comprises a massive state-of-the-art cleanroom envelope designed to Class 10/100/1000 standards, demanding sub-micron particulate filtration.
+DPR Construction's engineering team coordinates the MEP coordination, cleanroom design, and heavy structural engineering.
+The facility is built on a massive, vibration-isolated concrete slab to prevent micro-vibrations from affecting the lithography equipment.
+Specialized utility systems include ultra-pure water (UPW) generation plants, gas delivery grids, and chemical supply piping.
+BIM coordination is used to map the complex network of process piping, cleanroom ducts, and power cabling.
+Prefabricated modular cleanroom wall and ceiling panels are assembled on-site to ensure rapid scheduling and quality control.
+Safety protocols are managed through digital permit-to-work systems, maintaining a zero-harm site culture.
+The facility incorporates sustainable design features, including zero liquid discharge (ZLD) water recycling and energy-efficient HVAC.
+A dedicated industrial water reclamation plant will recycle over 90% of the water used in the manufacturing process.
+The completed facility will support the manufacturing of logic and power management microchips, creating thousands of high-tech engineering roles.
+The collaboration between Tata Group, technology partners, and constructors is highly integrated.
+Rigorous commissioning testing will verify all cleanroom air quality, ultra-pure water, and gas purity levels.
+This ensures a right-first-time quality standard before commercial production begins.
+DPR is proud to build the high-tech infrastructure that powers India's digital future.
+The semiconductor fab stands as a monument to precision and technical excellence in engineering.`,
+    client: 'Tata Electronics Private Limited (TEPL)',
+    location: 'Dholera, Gujarat / Jagiroad, Assam, India',
+    value: `\$11 Billion`,
+    scope: [
+      `Construction of state-of-the-art cleanroom facilities (Class 10/100/1000)`,
+      `Vibration-isolated structural foundations and slab casting`,
+      `Ultra-pure water (UPW) generation and wastewater recycling systems`,
+      `Specialized gas and chemical delivery piping systems`,
+    ],
+    innovations: [
+      `Modular cleanroom envelope prefabrication`,
+      `Precision mechanical vibration damping control systems`,
+      `Integrated water reclamation and zero liquid discharge (ZLD) systems`,
+    ],
+    timeline: '2024 - 2027',
+    companies: [
+      `Tata Electronics Private Limited – Client & Owner`,
+      `Tata Projects – Construction Partner`,
+      `DPR Construction – General Constructor`,
+    ],
+    implementingAgency: 'Tata Electronics Private Limited / Ministry of Electronics and Information Technology',
+    purpose: `The Tata Electronics Semiconductor Facility is being developed to establish India's first commercial semiconductor fabrication and packaging plant. It aims to build a robust domestic microchip supply chain, reduce dependency on imported electronics, create thousands of high-tech jobs, and position India as a global player in semiconductor manufacturing.`,
+    constructor: 'Tata Projects',
+    subconstructor: 'DPR Construction',
+  },
+  {
+    slug: 'nagpur-metallurgical-expansion',
+    title: `Nagpur Metallurgical Expansion Project – India`,
+    date: 'Mar 30, 2026',
+    category: 'Infrastructure',
+    image: '/metallurgical expansion project in Hingna_ Nagpur_ Maharashtra -.png',
+    overview: `The Nagpur Metallurgical Expansion Project is a significant heavy industrial development located in Hingna MIDC, Nagpur, Maharashtra.
+The project focuses on expanding alloy and structural steel manufacturing capacity, upgrading furnace technology, and integrating advanced environmental systems.
+The expansion is promoted by Nagpur Alloys & Metallurgical Industries to meet the rising demand for high-strength steel in the construction and infrastructure sectors.
+The scope of work includes erecting a new electric arc furnace (EAF), constructing heavy foundations for steel rolling mills, and routing utility lines.
+DPR Construction's engineering team coordinates structural layouts, heavy equipment staging, and electrical grid integration.
+The foundations utilize high-capacity reinforced concrete structures engineered to withstand heavy mechanical vibration and thermal loads.
+Specialized closed-loop cooling towers and air filtration networks are integrated to reduce water usage and exhaust emissions.
+BIM coordination is used to design the layout of the EAF complexes and prevent space conflicts with existing power grids.
+Prefabricated structural steel framing is utilized for rapid building assembly.
+This accelerates the construction schedule and enhances safety for high-altitude installation work.
+Safety is monitored in real-time, targeting zero-harm operations across all construction zones.
+The expanded metallurgical plant will produce specialized structural steels, supporting local manufacturing and infrastructure projects.
+The project integrates sustainable design features, including waste heat recovery loops and water recycling systems.
+Local communities in Nagpur benefit from industrial development and high-value jobs.
+The collaboration between metallurgical authorities, regional utilities, and constructors is highly integrated.
+Rigorous safety audits and concrete quality testing are conducted to verify compliance with heavy industrial standards.
+This ensures a long-term, low-maintenance lifespan for the metallurgical facility.
+DPR is proud to support the delivery of this critical heavy industrial infrastructure project.
+The expansion stands as a benchmark for modern, sustainable, and high-speed industrial engineering.`,
+    client: 'Nagpur Alloys & Metallurgical Industries',
+    location: 'Hingna, Nagpur, Maharashtra, India',
+    value: `\$450 Million`,
+    scope: [
+      `Erection of new electric arc furnace (EAF) structure`,
+      `Heavy foundations for steel rolling mills and casting lines`,
+      `Installation of advanced dust extraction and air filtration systems`,
+      `Cooling water loops and high-voltage substation integration`,
+    ],
+    innovations: [
+      `Energy-efficient furnace recovery systems`,
+      `AI-driven melt composition analytics`,
+      `Water-saving closed-loop cooling towers`,
+    ],
+    timeline: '2023 - 2026',
+    companies: [
+      `Nagpur Alloys & Metallurgical Industries – Client & Owner`,
+      `Larsen & Toubro (L&T) – Construction Partner`,
+      `DPR Construction – General Constructor`,
+    ],
+    implementingAgency: 'Nagpur Alloys & Metallurgical Industries / Maharashtra Industrial Development Corporation (MIDC)',
+    purpose: `The metallurgical expansion project in Hingna, Nagpur, is designed to increase alloy manufacturing capacity and modernize production machinery. It aims to meet the rising demand for high-strength structural steels in construction and automotive sectors, while adopting energy-recovery furnaces and environmental filtration systems to reduce carbon emissions and resource usage.`,
+    constructor: 'Larsen & Toubro (L&T)',
+    subconstructor: 'DPR Construction',
+  },
+  {
+    slug: 'krishnapatnam-port-expansion',
+    title: `Krishnapatnam Port Expansion Project – India`,
+    date: 'Feb 10, 2026',
+    category: 'Infrastructure',
+    image: '/Million Krishnapatnam Port Expansion Project in Tirupati_ Andhra Pradesh.png',
+    overview: `The Krishnapatnam Port Expansion Project is a major maritime development aimed at expanding the handling capacity and depth of the Krishnapatnam Port.
+Located in the Tirupati Region (Nellore district) of Andhra Pradesh, the port serves as a vital logistics gateway for south-central India.
+The expansion is owned and managed by Adani Ports and Special Economic Zone (APSEZ), targeting the handling of Capesize bulk carriers and ultra-large container vessels.
+The scope of work comprises the construction of new deep-draft container berths, quay walls, container yards, and dredging of the channel.
+DPR Construction's engineering team coordinates structural layouts, port utilities, and terminal automation systems.
+The new container berths utilize high-durability, corrosion-resistant concrete wharf decks engineered to handle high marine salinity.
+Advanced automated quay crane dispatch systems, smart logistics sorting, and biometric port access controls are integrated.
+BIM coordination is used to design the container yards and rail/road link corridors, avoiding conflicts with existing port lines.
+Prefabricated concrete breakwater armor blocks (tetrapods) are used to protect the berths from wave action.
+This accelerates the construction timeline and enhances safety for high-altitude installation work.
+Safety is monitored in real-time, targeting zero-harm operations across all construction zones.
+The port expansion will boost trade capacity, reducing cargo turnaround times and logistics costs.
+The project integrates sustainable design features, including solar-powered port utilities and localized water harvesting systems.
+Local communities along the port corridor benefit from economic development and high-value cargo jobs.
+The collaboration between port authorities, state governments, and constructors is highly integrated.
+Rigorous safety audits and concrete quality testing are conducted to verify compliance with marine engineering standards.
+This ensures a long-term, low-maintenance lifespan for the port structures.
+DPR is proud to support the delivery of this critical maritime infrastructure project.
+The expansion stands as a benchmark for modern, sustainable, and high-speed port engineering.`,
+    client: 'Adani Ports and Special Economic Zone (APSEZ) / Krishnapatnam Port Company Limited',
+    location: 'Krishnapatnam, Tirupati Region, Andhra Pradesh, India',
+    value: `\$850 Million`,
+    scope: [
+      `Construction of deep-draft container berths and quay walls`,
+      `Dredging of channel to accommodate Capesize vessels`,
+      `Development of automated container stack yards`,
+      `Port railway line and cargo highway expansion`,
+    ],
+    innovations: [
+      `Automated smart quay crane dispatch systems`,
+      `Corrosion-resistant concrete wharf decks`,
+      `Real-time port gate and logistics tracking`,
+    ],
+    timeline: '2022 - 2026',
+    companies: [
+      `Adani Ports and Special Economic Zone – Client & Owner`,
+      `Afcons Infrastructure – Construction Partner`,
+      `DPR Construction – General Constructor`,
+    ],
+    implementingAgency: 'APSEZ / Krishnapatnam Port Company Limited / Andhra Pradesh Maritime Board',
+    purpose: `The Krishnapatnam Port Expansion Project aims to boost container and bulk handling capacity, enabling the port to handle massive Capesize vessels. It is designed to act as a key logistics gateway for industries in Andhra Pradesh, Karnataka, and Tamil Nadu, reducing cargo transit times and promoting port-linked industrialization in the region.`,
+    constructor: 'Afcons Infrastructure',
+    subconstructor: 'DPR Construction',
+  },
+  {
+    slug: 'dhenkanal-bess-manufacturing',
+    title: `Battery Energy Storage System (BESS) Mfg. Unit – India`,
+    date: 'Jan 18, 2026',
+    category: 'Technology',
+    image: '/Million New Battery Energy Storage System Mfg. Unit in Dhenkanal_ Odisha.png',
+    overview: `The Battery Energy Storage System (BESS) Manufacturing Unit is a state-of-the-art heavy industrial gigafactory development located in Dhenkanal, Odisha.
+The project is focused on establishing a high-capacity manufacturing plant for lithium-ion battery packs, advanced chemistry cells, and grid-scale energy storage systems.
+The development is promoted by leading energy storage developers to support India's utility-scale renewable energy storage and electric vehicle goals.
+The scope of work comprises constructing a massive manufacturing facility, clean/dryroom assembly suites, testing labs, and high-voltage grid links.
+DPR Construction's engineering team coordinates structural layouts, dryroom HVAC systems, and automated production line integration.
+The assembly suites require ultra-low dew point dryroom systems to prevent lithium degradation during cell fabrication.
+The foundations utilize high-capacity reinforced concrete structures engineered to support heavy automated machinery.
+Specialized HVAC filtration and air handling units are integrated to maintain strict humidity and temperature controls.
+BIM coordination is used to design the production line layouts and prevent conflicts with heavy utility piping.
+Prefabricated panels for the dryrooms are assembled on site to ensure rapid installation and quality control.
+Safety is monitored in real-time, targeting zero-harm operations across all construction zones.
+The factory will produce utility-scale BESS packs, enabling renewable grid stability and local EV battery supply.
+The project integrates sustainable design features, including solar PV arrays, wastewater recycling, and energy-recovery systems.
+Local communities in Dhenkanal benefit from high-tech manufacturing development and high-value jobs.
+The collaboration between energy authorities, developers, and constructors is highly integrated.
+Rigorous safety audits and dryroom environment testing are conducted to verify compliance with battery manufacturing standards.
+This ensures a long-term, low-maintenance lifespan for the manufacturing facility.
+DPR is proud to support the delivery of this critical clean tech infrastructure project.
+The gigafactory stands as a benchmark for modern, sustainable, and high-speed industrial engineering.`,
+    client: 'Odisha Power Generation Corporation (OPGC) / Lead Energy Storage Developer',
+    location: 'Dhenkanal, Odisha, India',
+    value: `\$600 Million`,
+    scope: [
+      `Gigafactory structure and high-dryness assembly rooms`,
+      `Advanced automated battery cell assembly lines`,
+      `Precision HVAC and environmental controls for lithium processing`,
+      `Integrated testing and quality assurance labs`,
+    ],
+    innovations: [
+      `Ultra-low dew point dryroom systems`,
+      `Fully automated robotic battery pack assembly`,
+      `Smart battery management system (BMS) testing rigs`,
+    ],
+    timeline: '2023 - 2026',
+    companies: [
+      `Odisha Power Generation Corporation – Project Nodal Agency`,
+      `Exide Industries – Construction Partner`,
+      `DPR Construction – General Constructor`,
+    ],
+    implementingAgency: 'OPGC / Industrial Promotion & Investment Corporation of Odisha Limited (IPICOL)',
+    purpose: `The Battery Energy Storage System (BESS) Manufacturing Unit in Dhenkanal is developed to manufacture utility-scale battery storage packs. It supports India's renewable energy goals by localizing storage pack production, which is essential to manage grid stability, store solar/wind power, and support the growing electric vehicle and grid storage sectors.`,
+    constructor: 'Exide Industries',
+    subconstructor: 'DPR Construction',
+  },
+  {
+    slug: 'rail-baltica',
+    title: `Rail Baltica – Europe`,
+    date: 'May 20, 2026',
+    category: 'Infrastructure',
+    image: '/Rail Baltica – Europe.png',
+    overview: `Rail Baltica is a greenfield rail transport infrastructure project with a goal to integrate the Baltic States in the European rail network.
+The project spans across Estonia, Latvia, Lithuania, and Poland, introducing standard European gauge rail traffic to the region.
+It is one of the largest infrastructure programs in the Baltic States, managed by the joint venture company RB Rail AS.
+The goal is to facilitate high-speed passenger and heavy freight travel, reducing carbon emissions and enhancing international logistics.
+The scope of work is divided into multiple phases, beginning with site development, land acquisition, and main line design.
+DPR Construction's engineering team coordinates structural designs, passenger terminals, and track-laying workflows.
+The main line spans 870 km and is designed as a double-track, electrified railway using ERTMS signaling.
+All major structures utilize modern, durable concrete specifications engineered for northern European winter climates.
+BIM coordination is used to design the international segment links and prevent space conflicts with existing grids.
+Prefabricated concrete segments are extensively used in building bridges, viaducts, and station structures.
+This accelerates the construction timeline and enhances safety for high-altitude installation work.
+Safety is monitored in real-time, targeting zero-harm operations across all construction zones.
+Rail Baltica is designed to integrate with regional ports, airports, and urban hubs to enable multi-modal logistics.
+The project integrates sustainable design features, including solar-integrated terminal roofs and ecological wildlife crossings.
+Local communities along the alignment benefit from economic development and high-value transport links.
+The collaboration between RB Rail AS, Baltic governments, and constructors is highly integrated.
+Rigorous safety audits and track load testing are conducted to verify compliance with European rail standards.
+This ensures a long-term, low-maintenance lifespan for the high-velocity rail network.
+DPR is proud to support the delivery of this critical transit infrastructure project.
+The project stands as a benchmark for modern, sustainable, and high-speed rail engineering.`,
+    client: 'RB Rail AS (Estonia, Latvia, Lithuania joint venture)',
+    location: 'Estonia, Latvia, Lithuania, and Poland',
+    value: `\$26 Billion`,
+    scope: [
+      `Construction of 870 km double-track high-speed railway`,
+      `Development of passenger terminals and freight nodes`,
+      `Overhead electrification and ERTMS signaling integration`,
+      `Construction of major bridges and river crossings`,
+    ],
+    innovations: [
+      `Standard European gauge (1435 mm) integration in Baltic States`,
+      `BIM-coordinated international segment synchronization`,
+      `Advanced wildlife crossings and environmental buffers`,
+    ],
+    timeline: '2019 - 2030',
+    companies: [
+      `RB Rail AS – Project Coordinator`,
+      `Estonian, Latvian, and Lithuanian Ministries of Transport – Shareholders`,
+      `DPR Construction – General Constructor`,
+    ],
+    implementingAgency: 'RB Rail AS / National Implementing Bodies (Rail Baltic Estonia, Eiropas Dzelzceļa līnijas, LTG Infra)',
+    purpose: `Rail Baltica is developed to eliminate the transport isolation of the Baltic States by connecting them to the European standard rail gauge network. It aims to support sustainable transportation, shift freight from road to rail, reduce travel times, and promote economic integration and security in Northeastern Europe.`,
+    constructor: 'DPR Construction',
+    subconstructor: 'RB Rail AS / Joint Venture Partners',
+  },
+  {
+    slug: 'lower-thames-crossing',
+    title: `Lower Thames Crossing – United Kingdom`,
+    date: 'Apr 15, 2026',
+    category: 'Infrastructure',
+    image: '/Lower Thames Crossing – United Kingdom.png',
+    overview: `The Lower Thames Crossing is a proposed major road project stretching 14.3 miles, featuring twin-bore tunnels beneath the River Thames.
+Located east of London, the project connects Kent and Essex, designed to relieve severe traffic congestion at the Dartford Crossing.
+The project is managed by National Highways (UK) and represents the largest road building project in the UK in over three decades.
+The goal is to double road capacity across the Thames, improve transit reliability, and boost local manufacturing and logistics.
+The scope of work is divided into multiple packages, including tunnel excavation, road connections, and ecological mitigation.
+DPR Construction's engineering team coordinates structural designs, tunnel portals, and smart traffic control systems.
+The twin-bore tunnels span 2.6 miles, making them among the longest road tunnels in the world.
+All major structures utilize modern, durable concrete specifications engineered for subterranean marine loads.
+BIM coordination is used to design the road portals and prevent space conflicts with existing utility grids.
+Prefabricated concrete lining segments are extensively used in building the twin-bore tunnels.
+This accelerates the construction timeline and enhances safety for underground installation work.
+Safety is monitored in real-time, targeting zero-harm operations across all construction zones.
+The project integrates sustainable design features, including low-carbon concrete and extensive habitat creation.
+Local communities along the alignment benefit from economic development and high-value highway links.
+The collaboration between National Highways, regional councils, and constructors is highly integrated.
+Rigorous safety audits and concrete quality testing are conducted to verify compliance with UK highway standards.
+This ensures a long-term, low-maintenance lifespan for the high-velocity road network.
+DPR is proud to support the delivery of this critical transport infrastructure project.
+The crossing stands as a benchmark for modern, sustainable, and high-speed tunnel engineering.`,
+    client: 'National Highways (United Kingdom)',
+    location: 'Kent and Essex, United Kingdom',
+    value: `\$10 Billion`,
+    scope: [
+      `Excavation of twin-bore 2.6-mile road tunnels under Thames`,
+      `Construction of 14.3 miles of new connection highways`,
+      `Development of smart traffic management and tolling systems`,
+      `Significant ecological habitat restoration along route`,
+    ],
+    innovations: [
+      `Use of ultra-large diameter Tunnel Boring Machines (TBMs)`,
+      `Low-carbon concrete structural tunnel lining rings`,
+      `Real-time geotechnical and ground water monitoring sensors`,
+    ],
+    timeline: '2024 - 2032',
+    companies: [
+      `National Highways – Project Owner`,
+      `Balfour Beatty – Major Highway Package Constructor`,
+      `DPR Construction – General Constructor`,
+    ],
+    implementingAgency: 'National Highways / Department for Transport',
+    purpose: `The Lower Thames Crossing is developed to decongest the Dartford Crossing and improve traffic flow between Kent and Essex. It aims to support industrial supply chains, boost economic productivity, and create a resilient transport link using low-carbon engineering practices and habitat restoration.`,
+    constructor: 'DPR Construction',
+    subconstructor: 'National Highways / Balfour Beatty',
+  },
+  {
+    slug: 'kasso-green-hydrogen',
+    title: `Kassø Green Hydrogen Project – Denmark`,
+    date: 'Mar 25, 2026',
+    category: 'Infrastructure',
+    image: '/Kassø Green Hydrogen Project – Denmark.png',
+    overview: `The Kassø Green Hydrogen Project is a utility-scale green hydrogen and e-methanol production development located in Aabenraa, Denmark.
+Spearheaded by European Energy and Engie, the facility will harness Denmark's abundant solar and wind resources to generate clean fuel.
+The project is backed by the European Hydrogen Bank (EHB) and aims to pipe clean hydrogen directly to meet industrial demands in Germany.
+The goal is to decarbonize heavy transport, maritime shipping, and chemical industries using hydrogen-based fuels.
+The scope of work is divided into multiple phases, beginning with electrolyzer station construction and water connection links.
+DPR Construction's engineering team coordinates structural designs, electrolyzer mounting, and high-purity utility grids.
+The facility features a 150 MW Proton Exchange Membrane (PEM) electrolyzer array, making it one of the largest in Europe.
+All major structures utilize modern, durable concrete specifications engineered for heavy industrial and chemical loads.
+BIM coordination is used to design the electrolyzer layouts and prevent space conflicts with existing grids.
+Prefabricated components are extensively used in building control rooms and electrolyzer enclosures.
+This accelerates the construction timeline and enhances safety for high-altitude installation work.
+Safety is monitored in real-time, targeting zero-harm operations across all construction zones.
+The project integrates sustainable design features, including closed-loop water treatment and local heat recovery loops.
+Waste heat from the electrolysis process is captured and fed directly into the regional district heating grid.
+Local communities in Kassø benefit from clean energy development and high-value technical jobs.
+The collaboration between European Energy, Engie, and constructors is highly integrated.
+Rigorous safety audits and pipeline integrity testing are conducted to verify compliance with chemical safety standards.
+This ensures a long-term, low-maintenance lifespan for the clean energy generation hub.
+DPR is proud to support the delivery of this landmark green hydrogen infrastructure project.
+The Kassø site stands as a benchmark for modern, sustainable, and high-capacity clean tech engineering.`,
+    client: 'European Energy / Engie',
+    location: 'Kassø, Denmark',
+    value: `\$400 Million`,
+    scope: [
+      `Erection of 150 MW PEM electrolyzer generation arrays`,
+      `Construction of high-purity hydrogen collection piping`,
+      `Integration with local solar park and grid power connections`,
+      `E-methanol conversion and chemical storage facilities`,
+    ],
+    innovations: [
+      `Utility-scale PEM hydrogen electrolysis integration`,
+      `Direct solar-to-hydrogen energy conversion automation`,
+      `Closed-loop heat recovery feeding local district heating`,
+    ],
+    timeline: '2023 - 2026',
+    companies: [
+      `European Energy – Lead Developer`,
+      `Engie – Project Partner`,
+      `DPR Construction – General Constructor`,
+    ],
+    implementingAgency: 'European Energy / Engie / European Hydrogen Bank',
+    purpose: `The Kassø Green Hydrogen Project is developed to manufacture green hydrogen and e-methanol, supplying clean fuel to decarbonize European shipping and German heavy industries. It aims to support international decarbonization targets, integrate solar generation with electrolysis, and supply waste heat to local district heating.`,
+    constructor: 'DPR Construction',
+    subconstructor: 'European Energy / Engie',
   }
 ];
