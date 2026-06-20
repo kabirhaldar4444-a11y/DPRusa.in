@@ -880,7 +880,6 @@ const ContactPage = () => {
   const offices = [
     { city: "New York, USA", type: "Global Headquarters", address: "Carnegie Hall Tower, 200 West 57th Street, New York, NY 10019, United States", phone: "+1 650 592 4800", email: "hq@dpr-construction.com", lat: 40.7648, lng: -73.9801 },
     { city: "Dubai, UAE", type: "Middle East Hub", address: "Level 45, Burj Daman, DIFC, Dubai", phone: "+971 4 321 0000", email: "dubai@dpr-construction.com", lat: 25.2120, lng: 55.2810 },
-    { city: "Redwood City, USA", type: "North America Office", address: "1450 Veterans Blvd, Redwood City, CA 94063", phone: "+1 650 592 4800", email: "hq@dpr-construction.com", lat: 37.4852, lng: -122.2364 },
     { city: "Mumbai, India", type: "Asia Pacific HQ", address: "A10, 19 Floor, The Capital Building, Bandra Kurla Complex, Mumbai, Maharashtra 400051, India", phone: "+91 22 4000 0000", email: "india@dpr-construction.com", lat: 19.0660, lng: 72.8654 },
     { city: "Tokyo, Japan", type: "East Asia Office", address: "Marunouchi, Chiyoda City, Tokyo 100-0005", phone: "+81 3 0000 0000", email: "japan@dpr-construction.com", lat: 35.6812, lng: 139.7671 },
     { city: "Canberra, Australia", type: "Oceania Office", address: "15 Constitution Ave, Canberra ACT 2601", phone: "+61 2 0000 0000", email: "australia@dpr-construction.com", lat: -35.2809, lng: 149.1300 },
@@ -936,7 +935,7 @@ const ContactPage = () => {
                 </div>
                 <div className="flex gap-4 items-center">
                   <Mail size={20} className="text-blue-300" />
-                  <span>hrd@dprconstruction.co.in</span>
+                  <span>hrd@dprconstructions.co</span>
                 </div>
               </div>
             </div>
@@ -1162,7 +1161,7 @@ const Footer = () => {
           <div className="space-y-1">
             <p>+912241520141</p>
             <p>+912241520142</p>
-            <p><a href="mailto:hrd@dprconstruction.co.in" className="hover:text-white transition-colors">hrd@dprconstruction.co.in</a></p>
+            <p><a href="mailto:hrd@dprconstructions.co" className="hover:text-white transition-colors">hrd@dprconstructions.co</a></p>
           </div>
           <div>
             <p>Global HQ : Carnegie Hall Tower, 200 West 57th Street,<br />New York, NY 10019, United States</p>
