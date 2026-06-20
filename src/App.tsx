@@ -203,7 +203,7 @@ const Hero = () => {
             <span className="text-blue-400">Beyond Borders</span>
           </h1>
           <p className="text-lg text-slate-200 mb-10 leading-relaxed max-w-2xl">
-            A Redwood City, California-based global construction and engineering company delivering excellence in transport, power, mining, and high-rise infrastructure worldwide.
+            A global construction and engineering company delivering excellence in transport, power, mining, and high-rise infrastructure worldwide.
           </p>
           <div className="flex flex-wrap gap-4">
             <button onClick={() => {
@@ -878,9 +878,9 @@ const ContactPage = () => {
   };
 
   const offices = [
-    { city: "Redwood City, USA", type: "Global Headquarters", address: "1450 Veterans Blvd, Redwood City, CA 94063", phone: "+1 650 592 4800", email: "hq@dpr-construction.com", lat: 37.4852, lng: -122.2364 },
+    { city: "New York, USA", type: "Global Headquarters", address: "Carnegie Hall Tower, 200 West 57th Street, New York, NY 10019, United States", phone: "+1 650 592 4800", email: "hq@dpr-construction.com", lat: 40.7648, lng: -73.9801 },
     { city: "Dubai, UAE", type: "Middle East Hub", address: "Level 45, Burj Daman, DIFC, Dubai", phone: "+971 4 321 0000", email: "dubai@dpr-construction.com", lat: 25.2120, lng: 55.2810 },
-    { city: "Washington, USA", type: "North America Office", address: "1200 Pennsylvania Ave NW, Washington, DC 20004", phone: "+1 202 555 0123", email: "usa@dpr-construction.com", lat: 38.8954, lng: -77.0287 },
+    { city: "Redwood City, USA", type: "North America Office", address: "1450 Veterans Blvd, Redwood City, CA 94063", phone: "+1 650 592 4800", email: "hq@dpr-construction.com", lat: 37.4852, lng: -122.2364 },
     { city: "Mumbai, India", type: "Asia Pacific HQ", address: "A10, 19 Floor, The Capital Building, Bandra Kurla Complex, Mumbai, Maharashtra 400051, India", phone: "+91 22 4000 0000", email: "india@dpr-construction.com", lat: 19.0660, lng: 72.8654 },
     { city: "Tokyo, Japan", type: "East Asia Office", address: "Marunouchi, Chiyoda City, Tokyo 100-0005", phone: "+81 3 0000 0000", email: "japan@dpr-construction.com", lat: 35.6812, lng: 139.7671 },
     { city: "Canberra, Australia", type: "Oceania Office", address: "15 Constitution Ave, Canberra ACT 2601", phone: "+61 2 0000 0000", email: "australia@dpr-construction.com", lat: -35.2809, lng: 149.1300 },
@@ -936,7 +936,7 @@ const ContactPage = () => {
                 </div>
                 <div className="flex gap-4 items-center">
                   <Mail size={20} className="text-blue-300" />
-                  <span>hrd@dprconstruction.in</span>
+                  <span>hrd@dprconstruction.co.in</span>
                 </div>
               </div>
             </div>
@@ -1118,7 +1118,7 @@ const Footer = () => {
                 <span className="text-blue-400">Everywhere.</span>
               </h2>
               <p className="text-slate-400 text-lg leading-relaxed max-w-md mb-6">
-                DPR Construction is a Redwood City, California-based multinational engineering company delivering roads, metro, railway, power, mining, manufacturing, and high-rise infrastructure projects worldwide since 1990.
+                DPR Construction is a multinational engineering company delivering roads, metro, railway, power, mining, manufacturing, and high-rise infrastructure projects worldwide since 1990.
               </p>
               <div className="flex gap-6">
                 <a href="https://www.linkedin.com/company/113341118/admin/dashboard/" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-white transition-colors text-sm font-bold uppercase tracking-widest">LinkedIn</a>
@@ -1162,10 +1162,10 @@ const Footer = () => {
           <div className="space-y-1">
             <p>+912241520141</p>
             <p>+912241520142</p>
-            <p><a href="mailto:hrd@dprconstruction.in" className="hover:text-white transition-colors">hrd@dprconstruction.in</a></p>
+            <p><a href="mailto:hrd@dprconstruction.co.in" className="hover:text-white transition-colors">hrd@dprconstruction.co.in</a></p>
           </div>
           <div>
-            <p>Global HQ : 1450 Veterans Blvd,Redwood City, CA 94063 , USA</p>
+            <p>Global HQ : Carnegie Hall Tower, 200 West 57th Street,<br />New York, NY 10019, United States</p>
           </div>
           <div>
             <p>Asia HQ : A10, 19 Floor, The Capital Building, Bandra Kurla Complex, Mumbai, Maharashtra<br />400051, India</p>
@@ -1459,9 +1459,6 @@ const HistoryPage = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-24">
           <div className="space-y-6 text-slate-700 leading-relaxed text-lg">
-            <p>
-              Founded in 1990 by construction veterans Doug Woods, Peter Nosler, and Ron Davidowski, DPR Construction was created with a vision to build a different kind of construction company—one focused on innovation, collaboration, and exceptional customer service. The company's name comes from the initials of its three founders: D, P, and R.
-            </p>
             <p>
               Starting with a small team of just 11 professionals and $750,000 in pooled resources, DPR quickly established itself as a trusted builder of complex and technically challenging projects. The company expanded rapidly by focusing on high-growth industries including healthcare, life sciences, advanced technology, higher education, mission-critical facilities, and commercial office construction.
             </p>
