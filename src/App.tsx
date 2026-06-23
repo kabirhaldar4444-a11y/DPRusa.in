@@ -956,7 +956,7 @@ const FraudNoticePage = () => {
                   <div className="w-2 h-2 bg-blue-700 rounded-full mt-2.5 shrink-0" />
                   <div>
                     <strong className="text-slate-900 block font-semibold mb-1">Suspicious Email Domains</strong>
-                    The individual or entity’s email address does not end in an official domain such as <code className="bg-slate-200/80 px-1.5 py-0.5 rounded text-sm font-medium font-mono text-slate-800">@dprconstruction.in</code>. (Be cautious of free domains like <code className="text-sm font-mono text-slate-800">@gmail.com</code>, <code className="text-sm font-mono text-slate-800">@yahoo.com</code>, or slight misspellings of our official domains).
+                    The individual or entity’s email address does not end in an official domain such as <code className="bg-slate-200/80 px-1.5 py-0.5 rounded text-sm font-medium font-mono text-slate-800">@dpr.asia</code>. (Be cautious of free domains like <code className="text-sm font-mono text-slate-800">@gmail.com</code>, <code className="text-sm font-mono text-slate-800">@yahoo.com</code>, or slight misspellings of our official domains).
                   </div>
                 </li>
                 <li className="flex gap-4 items-start bg-slate-50 p-4 rounded-xl border border-slate-100">
