@@ -12,7 +12,7 @@ import {
   Briefcase, GraduationCap, Globe2, TrendingUp, BarChart3,
   HeartPulse, Database, Building, FlaskConical, ShieldCheck,
   Hotel, Pickaxe, Handshake, Check, ArrowLeft, Calendar,
-  Tag, Clock, ChevronRight, Settings
+  Tag, Clock, ChevronRight, Settings, ShieldAlert
 } from 'lucide-react';
 import { IMAGES, COLORS, NAV_LINKS } from './constants';
 import { NEWS_ARTICLES } from './newsData';
@@ -757,6 +757,30 @@ const CareersPage = () => {
           subtitle="Join a global community of innovators, engineers, and visionaries dedicated to building the world's most critical infrastructure."
         />
         
+        {/* Fraudulent Job Offer Notice Banner */}
+        <div className="mb-12 p-6 bg-amber-50/80 backdrop-blur-sm border border-amber-200 rounded-2xl flex flex-col md:flex-row items-start md:items-center justify-between gap-4 shadow-sm hover:shadow-md transition-all duration-300 animate-fade-in">
+          <div className="flex items-start gap-4">
+            <div className="p-3 bg-amber-100 text-amber-800 rounded-xl shrink-0 mt-0.5">
+              <ShieldAlert size={24} />
+            </div>
+            <div>
+              <h4 className="font-bold text-amber-955 text-base">Important Security Alert</h4>
+              <p className="text-sm text-amber-900 font-medium mt-1">
+                Please be aware of fraudulent DPR job offers. Always verify employment opportunities.
+              </p>
+            </div>
+          </div>
+          <button
+            onClick={() => {
+              window.history.pushState({}, '', '/careers/fraud-notice');
+              window.dispatchEvent(new PopStateEvent('popstate'));
+            }}
+            className="px-6 py-3 bg-amber-800 text-white hover:bg-amber-900 transition-colors text-sm font-bold uppercase tracking-wider rounded-xl shrink-0 cursor-pointer flex items-center gap-2 shadow-sm"
+          >
+            Read Notice <ChevronRight size={18} />
+          </button>
+        </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-24">
           <div>
             <h3 className="text-2xl font-bold text-slate-900 mb-6">Our Workplace Culture</h3>
@@ -869,6 +893,135 @@ const CareersPage = () => {
   );
 };
 
+const FraudNoticePage = () => {
+  return (
+    <main className="pt-32 pb-24 bg-slate-50/50 min-h-screen">
+      <div className="max-w-4xl mx-auto px-6">
+        <button 
+          onClick={() => {
+            window.history.pushState({}, '', '/careers');
+            window.dispatchEvent(new PopStateEvent('popstate'));
+          }}
+          className="text-blue-700 font-bold flex items-center gap-2 mb-8 hover:gap-3 transition-all cursor-pointer"
+        >
+          <ArrowLeft size={18} /> Back to Careers
+        </button>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="bg-white border border-slate-200 rounded-3xl p-8 lg:p-12 shadow-sm"
+        >
+          <div className="flex items-center gap-4 border-b border-slate-100 pb-6 mb-8">
+            <div className="p-3 bg-amber-50 text-amber-700 rounded-2xl">
+              <ShieldAlert size={32} />
+            </div>
+            <div>
+              <span className="text-xs font-bold text-amber-700 uppercase tracking-widest bg-amber-50 px-2.5 py-1 rounded-md">Security Notice</span>
+              <h1 className="text-3xl font-extrabold text-slate-900 mt-2">Notice Regarding Fraudulent Job Offers</h1>
+            </div>
+          </div>
+
+          <div className="space-y-6 text-slate-600 leading-relaxed text-justify">
+            <p className="text-lg text-slate-700 font-medium leading-relaxed">
+              We are aware that certain individuals or entities occasionally send fraudulent offers of employment using the names of DPR’s family of companies. These unsolicited job offers are not authentic or associated with our companies in any way.
+            </p>
+            <p className="text-lg text-slate-700 font-medium leading-relaxed">
+              DPR do not make offers of employment before completing a thorough hiring process, which includes multiple rounds of virtual interviews with our recruitment and leadership teams.
+            </p>
+
+            <div className="border-t border-slate-100 pt-8 mt-8">
+              <h3 className="text-xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+                <span className="w-1.5 h-6 bg-blue-700 rounded-full inline-block" />
+                Signs that a job offer may be fraudulent:
+              </h3>
+              
+              <ul className="space-y-4">
+                <li className="flex gap-4 items-start bg-slate-50 p-4 rounded-xl border border-slate-100">
+                  <div className="w-2 h-2 bg-blue-700 rounded-full mt-2.5 shrink-0" />
+                  <div>
+                    <strong className="text-slate-900 block font-semibold mb-1">No Prior Application</strong>
+                    The individual or entity contacted you about a job that you never applied for.
+                  </div>
+                </li>
+                <li className="flex gap-4 items-start bg-slate-50 p-4 rounded-xl border border-slate-100">
+                  <div className="w-2 h-2 bg-blue-700 rounded-full mt-2.5 shrink-0" />
+                  <div>
+                    <strong className="text-slate-900 block font-semibold mb-1">Not Listed Online</strong>
+                    The job referenced is not posted on the official DPR Careers sites.
+                  </div>
+                </li>
+                <li className="flex gap-4 items-start bg-slate-50 p-4 rounded-xl border border-slate-100">
+                  <div className="w-2 h-2 bg-blue-700 rounded-full mt-2.5 shrink-0" />
+                  <div>
+                    <strong className="text-slate-900 block font-semibold mb-1">Suspicious Email Domains</strong>
+                    The individual or entity’s email address does not end in an official domain such as <code className="bg-slate-200/80 px-1.5 py-0.5 rounded text-sm font-medium font-mono text-slate-800">@dprconstruction.in</code>. (Be cautious of free domains like <code className="text-sm font-mono text-slate-800">@gmail.com</code>, <code className="text-sm font-mono text-slate-800">@yahoo.com</code>, or slight misspellings of our official domains).
+                  </div>
+                </li>
+                <li className="flex gap-4 items-start bg-slate-50 p-4 rounded-xl border border-slate-100">
+                  <div className="w-2 h-2 bg-blue-700 rounded-full mt-2.5 shrink-0" />
+                  <div>
+                    <strong className="text-slate-900 block font-semibold mb-1">Unofficial Communication Channels</strong>
+                    You are contacted via WhatsApp, Telegram, Signal Messenger, Google Hangouts, or other personal messaging apps rather than through formal corporate email or verified LinkedIn profiles.
+                  </div>
+                </li>
+                <li className="flex gap-4 items-start bg-slate-50 p-4 rounded-xl border border-slate-100">
+                  <div className="w-2 h-2 bg-blue-700 rounded-full mt-2.5 shrink-0" />
+                  <div>
+                    <strong className="text-slate-900 block font-semibold mb-1">Demands for Money</strong>
+                    You are asked for payment. <em className="text-blue-900 font-bold not-italic">DPR Construction will never ask candidates for money</em>, registration fees, security deposits, laptop/equipment charges, or bank account/UPI details to secure employment.
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div className="border-t border-slate-100 pt-8 mt-8">
+              <h3 className="text-xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+                <span className="w-1.5 h-6 bg-blue-700 rounded-full inline-block" />
+                How to Report Fraud in India
+              </h3>
+              <p className="mb-4">
+                If you have received a fraudulent job offer or believe you have been a victim of a cyber scam or identity theft, we strongly recommend that you report it immediately to the relevant authorities:
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="p-5 border border-slate-200 rounded-2xl bg-slate-50/50 hover:bg-slate-50 transition-colors">
+                  <h4 className="font-bold text-slate-900 mb-2 flex items-center gap-2">
+                    <Globe size={18} className="text-blue-700" />
+                    National Cyber Crime Portal
+                  </h4>
+                  <p className="text-sm text-slate-600 mb-3 font-normal">File an online complaint or call the helpline.</p>
+                  <div className="flex flex-col gap-1 text-sm font-semibold">
+                    <a href="https://cybercrime.gov.in" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline flex items-center gap-1">
+                      cybercrime.gov.in <ExternalLink size={12} />
+                    </a>
+                    <span className="text-slate-700">Helpline: <a href="tel:1930" className="hover:underline">1930</a></span>
+                  </div>
+                </div>
+                <div className="p-5 border border-slate-200 rounded-2xl bg-slate-50/50 hover:bg-slate-50 transition-colors">
+                  <h4 className="font-bold text-slate-900 mb-2 flex items-center gap-2">
+                    <ShieldCheck size={18} className="text-blue-700" />
+                    Local Authorities
+                  </h4>
+                  <p className="text-sm text-slate-600 mb-3 font-normal">Visit your local Cyber Crime Police Station or your nearest police station.</p>
+                  <p className="text-sm font-semibold text-slate-700">Lodge a First Information Report (FIR).</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-10 p-6 bg-amber-50/50 border border-amber-200 rounded-2xl text-amber-900">
+              <p className="text-sm leading-relaxed text-justify">
+                <strong className="font-bold text-amber-950 block mb-2">Please Note:</strong>
+                DPR Construction and its subsidiary companies bear no responsibility for fraudulent job offers or any financial losses resulting from them. Always verify the authenticity of a job offer through our official channels before sharing personal information.
+              </p>
+            </div>
+          </div>
+        </motion.div>
+      </div>
+    </main>
+  );
+};
+
 const ContactPage = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -935,7 +1088,7 @@ const ContactPage = () => {
                 </div>
                 <div className="flex gap-4 items-center">
                   <Mail size={20} className="text-blue-300" />
-                  <span>hrd@dprconstructions.co</span>
+                  <span>hrd@dpr.asia</span>
                 </div>
               </div>
             </div>
@@ -1161,7 +1314,7 @@ const Footer = () => {
           <div className="space-y-1">
             <p>+912241520141</p>
             <p>+912241520142</p>
-            <p><a href="mailto:hrd@dprconstructions.co" className="hover:text-white transition-colors">hrd@dprconstructions.co</a></p>
+            <p><a href="mailto:hrd@dpr.asia" className="hover:text-white transition-colors">hrd@dpr.asia</a></p>
           </div>
           <div>
             <p>Global HQ : Carnegie Hall Tower, 200 West 57th Street,<br />New York, NY 10019, United States</p>
@@ -1918,6 +2071,8 @@ export default function App() {
       const path = window.location.pathname;
       if (path === '/careers') {
         setCurrentPage('careers');
+      } else if (path === '/careers/fraud-notice') {
+        setCurrentPage('careers-fraud-notice');
       } else if (path === '/contact') {
         setCurrentPage('contact');
       } else if (path === '/partner') {
@@ -1954,7 +2109,7 @@ export default function App() {
     return () => window.removeEventListener('popstate', handleRoute);
   }, []);
 
-  const lightPages = ['careers', 'contact', 'partner', 'india-partnerships', 'projects', 'news-detail'];
+  const lightPages = ['careers', 'careers-fraud-notice', 'contact', 'partner', 'india-partnerships', 'projects', 'news-detail'];
   const isLightPage = lightPages.includes(currentPage);
 
   return (
@@ -1964,6 +2119,7 @@ export default function App() {
       
       {currentPage === 'home' && <HomePage />}
       {currentPage === 'careers' && <CareersPage />}
+      {currentPage === 'careers-fraud-notice' && <FraudNoticePage />}
       {currentPage === 'contact' && <ContactPage />}
       {currentPage === 'partner' && <PartnerWithUsPage />}
       {currentPage === 'history' && <HistoryPage />}

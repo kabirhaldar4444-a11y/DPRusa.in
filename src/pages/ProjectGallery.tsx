@@ -14,18 +14,18 @@ const ProjectGallery = () => {
   // Filter projects based on category and search query
   const filteredProjects = NEWS_ARTICLES.filter((project) => {
     const matchesCategory = selectedCategory === 'All' || project.category === selectedCategory;
-    const matchesSearch = 
+    const matchesSearch =
       project.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       project.location.toLowerCase().includes(searchQuery.toLowerCase()) ||
       (project.client && project.client.toLowerCase().includes(searchQuery.toLowerCase()));
-    
+
     return matchesCategory && matchesSearch;
   });
 
   return (
     <section className="py-24 bg-slate-50 min-h-screen pt-32">
       <div className="max-w-7xl mx-auto px-6">
-        
+
         {/* Page Header */}
         <div className="text-center mb-12">
           <motion.div
@@ -39,8 +39,8 @@ const ProjectGallery = () => {
             </span>
             <div className="h-1 w-12 bg-blue-700" />
           </motion.div>
-          
-          <motion.h2 
+
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
@@ -48,7 +48,7 @@ const ProjectGallery = () => {
           >
             Explore Our Projects
           </motion.h2>
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
@@ -59,7 +59,7 @@ const ProjectGallery = () => {
         </div>
 
         {/* Filter Controls & Search */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
@@ -71,11 +71,10 @@ const ProjectGallery = () => {
               <button
                 key={category}
                 onClick={() => setSelectedCategory(category)}
-                className={`px-4 py-2 text-sm font-semibold rounded-lg transition-all duration-300 ${
-                  selectedCategory === category
+                className={`px-4 py-2 text-sm font-semibold rounded-lg transition-all duration-300 ${selectedCategory === category
                     ? 'bg-blue-700 text-white shadow-md shadow-blue-500/20'
                     : 'text-slate-600 hover:bg-slate-100 hover:text-slate-900'
-                }`}
+                  }`}
               >
                 {category}
               </button>
@@ -157,7 +156,7 @@ const ProjectGallery = () => {
 
         {/* Empty State */}
         {filteredProjects.length === 0 && (
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             className="text-center py-20 bg-white rounded-3xl border border-dashed border-slate-300"
