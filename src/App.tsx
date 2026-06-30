@@ -956,7 +956,7 @@ const FraudNoticePage = () => {
                   <div className="w-2 h-2 bg-blue-700 rounded-full mt-2.5 shrink-0" />
                   <div>
                     <strong className="text-slate-900 block font-semibold mb-1">Suspicious Email Domains</strong>
-                    The individual or entity’s email address does not end in an official domain such as <code className="bg-slate-200/80 px-1.5 py-0.5 rounded text-sm font-medium font-mono text-slate-800">@dprglobal.in</code>. (Be cautious of free domains like <code className="text-sm font-mono text-slate-800">@gmail.com</code>, <code className="text-sm font-mono text-slate-800">@yahoo.com</code>, or slight misspellings of our official domains).
+                    The individual or entity’s email address does not end in an official domain such as <code className="bg-slate-200/80 px-1.5 py-0.5 rounded text-sm font-medium font-mono text-slate-800">@dprusa.in</code>. (Be cautious of free domains like <code className="text-sm font-mono text-slate-800">@gmail.com</code>, <code className="text-sm font-mono text-slate-800">@yahoo.com</code>, or slight misspellings of our official domains).
                   </div>
                 </li>
                 <li className="flex gap-4 items-start bg-slate-50 p-4 rounded-xl border border-slate-100">
@@ -1088,7 +1088,7 @@ const ContactPage = () => {
                 </div>
                 <div className="flex gap-4 items-center">
                   <Mail size={20} className="text-blue-300" />
-                  <span>hrd@dprglobal.in</span>
+                  <span>hrd@dprusa.in</span>
                 </div>
               </div>
             </div>
@@ -1314,7 +1314,7 @@ const Footer = () => {
           <div className="space-y-1">
             <p>+912241520141</p>
             <p>+912241520142</p>
-            <p><a href="mailto:hrd@dprglobal.in" className="hover:text-white transition-colors">hrd@dprglobal.in</a></p>
+            <p><a href="mailto:hrd@dprusa.in" className="hover:text-white transition-colors">hrd@dprusa.in</a></p>
           </div>
           <div>
             <p>Global HQ : Carnegie Hall Tower, 200 West 57th Street,<br />New York, NY 10019, United States</p>
